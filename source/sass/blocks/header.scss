@@ -1,0 +1,150 @@
+.header__wrapper {
+  background: url('/img/background-header.jpg') no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+  display: flex;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.header__logo {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  img {
+    width: 112px;
+    height: 34px;
+  }
+}
+
+.header__phone {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+
+  position: absolute;
+  right: 15px;
+  top: 53px;
+}
+
+.header__burger-close {
+  display: block;
+  position: absolute;
+  top: 15px;
+  width: 26px;
+  height: 18.91px;
+  background: url('/img/burger.png') no-repeat;
+}
+
+.header__burger-open {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url('/img/burger-close.png') no-repeat;
+}
+
+.header__list {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-family: 14px;
+  letter-spacing: 0.04rem;
+  margin-top: 99px;
+
+}
+
+.header__item {
+  margin-bottom: 22px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header__box {
+  width: 100%;
+  background-color: #ffffff00;
+}
+
+
+@media (min-width: $tablet) {
+
+  .header__burger {
+    position: static;
+   margin-top: 42px;
+  }
+
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+  }
+
+  .header__logo {
+    padding-top: 42px;
+    position: static;
+
+    img {
+      width: 144px;
+      height: 44px;
+    }
+  }
+
+  .header__list {
+    position: absolute;
+  }
+
+  .header__phone {
+    padding-top: 42px;
+    position: static;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header__burger-close {
+    display: none;
+  }
+
+  .header__list {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 60px;
+  }
+
+  .header__item {
+    margin-right: 31px;
+    text-transform: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .header__item-link {
+    color: #ffffff;
+  }
+
+  .header__logo {
+     img {
+      width: 205px;
+      height: 62px;
+    }
+  }
+
+  .header__phone {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+}

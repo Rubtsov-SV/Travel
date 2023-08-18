@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <title>Путешествия</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header ">
+      <div class="header__wrapper">
+        <div class="header__box container">
+          <div class="header__burger header__burger-close"></div>
+          <a class="header__logo" href="index.html">
+            <img id="logo" src="img/logo.png" width="205" height="62" alt="Логотип Lifetour">
+          </a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__item-link" href="#">Туры</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Обучения</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Фотографии</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="header__phone" href="tel:88007253232">8 800 725 32 32</a>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
