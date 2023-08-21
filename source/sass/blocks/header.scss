@@ -4,7 +4,8 @@
   background-size: 100%;
   display: flex;
   position: relative;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
+  min-height: 100px;
 }
 
 .header__logo {
@@ -26,6 +27,16 @@
   position: absolute;
   right: 15px;
   top: 53px;
+  height: max-content;
+
+  &:hover,
+  :focus {
+    color: #1c3374;
+  }
+
+  &:active {
+   color: #0266c1;
+  }
 }
 
 .header__burger-close {
@@ -55,16 +66,25 @@
   font-weight: 700;
   font-family: 14px;
   letter-spacing: 0.04rem;
-  margin-top: 99px;
-
+  padding-top: 99px;
 }
 
 .header__item {
   margin-bottom: 22px;
   text-transform: uppercase;
+  padding: 4px;
+  height: max-content;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+
+  &:active {
+  box-shadow: #ffffff 0px 0px 0px 1px inset;
   }
 }
 
@@ -78,13 +98,13 @@
 
   .header__burger {
     position: static;
-   margin-top: 42px;
+    margin-top: 42px;
+    z-index: 2;
   }
 
   .header__box {
     display: flex;
     justify-content: space-between;
-    min-height: 400px;
   }
 
   .header__logo {
@@ -121,6 +141,7 @@
     font-size: 16px;
     color: #ffffff;
     margin-top: 60px;
+    padding-top: 0;
   }
 
   .header__item {
