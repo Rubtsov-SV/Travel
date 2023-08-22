@@ -1,10 +1,6 @@
 .header__wrapper {
-  background: url('/img/background-header.jpg') no-repeat;
-  object-fit: cover;
-  background-size: 100%;
   display: flex;
   position: relative;
-  margin-bottom: 70px;
   min-height: 100px;
 }
 
@@ -145,7 +141,7 @@
   }
 
   .header__item {
-    margin-right: 31px;
+    margin-right: 17px;
     text-transform: none;
 
     &:last-child {

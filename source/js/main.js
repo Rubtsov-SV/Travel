@@ -83,3 +83,31 @@ button.addEventListener('click', ()=> {
     close();
   }
 });
+
+// Слайдер Hero
+
+const swiperHero = new Swiper('.hero__swiper', {
+  slidesPerView: 1,
+//   slidesPerGroup: 1,
+  // loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// Видео экскурсия
+
+const videoButton = document.querySelector('#video-button');
+const videoImg = document.querySelector('#video-img');
+const video = document.querySelector('#video');
+const videoPlayer = document.querySelector('#video-player');
+
+videoButton.addEventListener('click', ()=> {
+  videoImg.style.display = 'none';
+  videoPlayer.style.display = 'block';
+  video.src += '?autoplay=1';
+});
