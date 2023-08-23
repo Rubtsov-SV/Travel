@@ -205,6 +205,15 @@
 
 @media (min-width: $desktop) {
   .tours {
+    h2 {
+      &::after {
+        width: 542px;
+        height: 55px;
+        top: -8px;
+        left: 10px;
+        background: url('/img/tours-desktop.png');
+      }
+    }
     &::after {
       top: 249px;
       right: -85px;
