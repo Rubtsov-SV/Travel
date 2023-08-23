@@ -111,3 +111,25 @@ videoButton.addEventListener('click', ()=> {
   videoPlayer.style.display = 'block';
   video.src += '?autoplay=1';
 });
+
+// Слайдер Туры
+
+const swiperTours = new Swiper('.tours__wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.s-button-next',
+    prevEl: '.s-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 45,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
+    },
+  },
+});
