@@ -1,13 +1,36 @@
 .tours {
+  position: relative;
   max-width: 384px;
   margin: 0 auto;
 
   h2 {
+    position: relative;
     font-size: 22px;
     font-weight: 800;
     margin: 0;
     margin-bottom: 28px;
     width: 156px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 256px;
+      height: 26px;
+      top: 0;
+      left: 10px;
+      background: url('/img/tours-mobile.png');
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 217px;
+    right: -169px;
+    width: 365px;
+    height: 595px;
+    background: url('/img/background-tours.png') no-repeat;
+    background-size: 365px 595px;
   }
 }
 
@@ -139,6 +162,19 @@
     h2 {
       font-size: 25px;
       width: 246px;
+
+      &::after {
+        width: 394px;
+        height: 40px;
+        top: -8px;
+        left: 10px;
+        background: url('/img/tours-tablet.png');
+      }
+    }
+
+    &::after {
+      top: 249px;
+      right: -150px;
     }
   }
 
@@ -168,6 +204,13 @@
 }
 
 @media (min-width: $desktop) {
+  .tours {
+    &::after {
+      top: 249px;
+      right: -85px;
+    }
+  }
+
   .tours__wrapper {
     position: relative;
   }
