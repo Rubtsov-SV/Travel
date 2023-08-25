@@ -5,6 +5,17 @@
     line-height: 22px;
     font-weight: 800;
     margin-bottom: 18px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/img/bg-header-training-mobile.png") no-repeat;
+      left: 0;
+      top: 0;
+      width: 144px;
+      height: 26px;
+    }
   }
 }
 
@@ -143,6 +154,18 @@
 }
 
 @media (min-width: $tablet) {
+  .training__wrapper {
+    h2 {
+      &::after {
+        background: url("/img/bg-header-training-tablet.png") no-repeat;
+        left: 0;
+        top: -11px;
+        width: 221px;
+        height: 40px;
+      }
+    }
+  }
+
   .training__item {
 
     img {
@@ -241,6 +264,14 @@
       font-size: 35px;
       line-height: 35px;
       margin-bottom: 38px;
+
+      &::after {
+        background: url("/img/bg-header-training-desktop.png") no-repeat;
+        left: 0;
+        top: -11px;
+        width: 304px;
+        height: 55px;
+      }
     }
   }
 

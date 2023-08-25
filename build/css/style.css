@@ -2901,6 +2901,16 @@ body {
   line-height: 22px;
   font-weight: 800;
   margin-bottom: 18px;
+  position: relative;
+}
+.training__wrapper h2::after {
+  content: "";
+  position: absolute;
+  background: url("/img/bg-header-training-mobile.png") no-repeat;
+  left: 0;
+  top: 0;
+  width: 144px;
+  height: 26px;
 }
 
 .training__text {
@@ -3035,6 +3045,13 @@ body {
 }
 
 @media (min-width: 768px) {
+  .training__wrapper h2::after {
+    background: url("/img/bg-header-training-tablet.png") no-repeat;
+    left: 0;
+    top: -11px;
+    width: 221px;
+    height: 40px;
+  }
   .training__item img {
     width: 176px;
     height: 212px;
@@ -3118,6 +3135,13 @@ body {
     line-height: 35px;
     margin-bottom: 38px;
   }
+  .training__wrapper h2::after {
+    background: url("/img/bg-header-training-desktop.png") no-repeat;
+    left: 0;
+    top: -11px;
+    width: 304px;
+    height: 55px;
+  }
   .training__text {
     width: 820px;
     font-size: 16px;
@@ -3183,6 +3207,111 @@ body {
     height: 1px;
     top: 56px;
     left: 10px;
+  }
+}
+.about-us__info h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  margin-top: 46px;
+  margin-bottom: 33px;
+  color: #2d383f;
+}
+.about-us__info h2::after {
+  content: "";
+  position: absolute;
+  background: url("/img/bg-header-about-us-mobile.png") no-repeat;
+  left: 0;
+  width: 80px;
+  height: 26px;
+}
+.about-us__info h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #2d383f;
+  margin-bottom: 18px;
+}
+.about-us__info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 41px;
+}
+
+@media (min-width: 768px) {
+  .about-us__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .about-us__photo {
+    position: absolute;
+    width: 475px;
+    z-index: -1;
+  }
+  .about-us__info {
+    padding-left: 0;
+    padding-left: 420px;
+  }
+  .about-us__info h2 {
+    position: relative;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 36px;
+  }
+  .about-us__info h2::after {
+    content: "";
+    position: absolute;
+    background: url("/img/bg-header-about-us-tablet.png") no-repeat;
+    left: 0;
+    top: -6px;
+    width: 122px;
+    height: 40px;
+  }
+  .about-us__info h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 19px;
+  }
+  .about-us__info p {
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us__photo {
+    width: 808px;
+  }
+  .about-us__info {
+    padding-left: 0;
+    padding-left: 770px;
+  }
+  .about-us__info h2 {
+    position: relative;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 58px;
+  }
+  .about-us__info h2::after {
+    content: "";
+    position: absolute;
+    background: url("/img/bg-header-about-us-desktop.png") no-repeat;
+    left: 0;
+    top: -6px;
+    width: 168px;
+    height: 55px;
+  }
+  .about-us__info h3 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 19px;
+  }
+  .about-us__info p {
+    line-height: 22px;
+    margin-bottom: 25px;
   }
 }
 /* @mixin hover-focus {

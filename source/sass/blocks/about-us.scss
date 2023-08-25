@@ -1,0 +1,121 @@
+.about-us__info {
+  h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    margin-top: 46px;
+    margin-bottom: 33px;
+    color: #2d383f;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/img/bg-header-about-us-mobile.png") no-repeat;
+      left: 0;
+      width: 80px;
+      height: 26px;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #2d383f;
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 41px;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .about-us__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  .about-us__photo {
+    position: absolute;
+    width: 475px;
+    z-index: -1;
+  }
+
+  .about-us__info {
+    padding-left: 0;
+    padding-left: 420px;
+
+    h2 {
+      position: relative;
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 36px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("/img/bg-header-about-us-tablet.png") no-repeat;
+        left: 0;
+        top: -6px;
+        width: 122px;
+        height: 40px;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 19px;
+    }
+
+    p {
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-us__photo {
+    width: 808px;
+  }
+
+  .about-us__info {
+    padding-left: 0;
+    padding-left: 770px;
+
+    h2 {
+      position: relative;
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 58px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("/img/bg-header-about-us-desktop.png") no-repeat;
+        left: 0;
+        top: -6px;
+        width: 168px;
+        height: 55px;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 19px;
+    }
+
+    p {
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+  }
+}
