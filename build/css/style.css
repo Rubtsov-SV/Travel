@@ -1320,6 +1320,10 @@ button,
           appearance: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   position: relative;
   display: -webkit-box;
@@ -2651,6 +2655,7 @@ button,
   position: relative;
   max-width: 384px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 .tours h2 {
   position: relative;
@@ -2678,6 +2683,7 @@ button,
   height: 595px;
   background: url("/img/background-tours.png") no-repeat;
   background-size: 365px 595px;
+  z-index: -1;
 }
 
 .tours__item {
@@ -2887,6 +2893,296 @@ button,
   }
   .tours__item {
     margin-bottom: 52px;
+  }
+}
+.training__wrapper h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.training__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+
+.training__item {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.training__item h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+.training__item img {
+  margin: 0 auto;
+}
+
+.training__card {
+  min-height: 385px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 37px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
+}
+.training__card h4 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.training__card p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.training-process h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.training__info {
+  padding-left: 52px;
+  position: relative;
+}
+.training__info p {
+  font-size: 12px;
+  line-height: 18px;
+  width: 192px;
+}
+.training__info::before {
+  content: "";
+  top: 10px;
+  left: 18px;
+  position: absolute;
+  width: 1px;
+  height: 187px;
+  background-color: rgba(2, 102, 193, 0.062745098);
+}
+
+.training__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  position: relative;
+}
+.training__info-wrapper p {
+  margin: 0;
+  margin-left: 12px;
+}
+.training__info-wrapper::after {
+  content: "";
+  top: 5px;
+  left: -40px;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #0266c1;
+}
+
+.training__card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.training__card-box a {
+  margin-top: 9px;
+}
+
+.training-next {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 2;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+}
+
+.training-back {
+  position: absolute;
+  top: 10px;
+  right: 56px;
+  z-index: 2;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+}
+
+.training__button-icon {
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .training__item img {
+    width: 176px;
+    height: 212px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+  }
+  .training__card {
+    min-height: 411px;
+    padding: 20px 20px 9px 20px;
+    margin-bottom: 37px;
+  }
+  .training__card h4 {
+    margin: 15px 0;
+  }
+  .training__card p {
+    margin: 0;
+  }
+  .training__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 141px;
+       -moz-column-gap: 141px;
+            column-gap: 141px;
+    row-gap: 91px;
+    padding-left: 0;
+  }
+  .training__info::before {
+    content: none;
+  }
+  .training__info-wrapper::after {
+    top: 50px;
+    left: 0px;
+  }
+  .training__info-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 355px;
+    height: 1px;
+    top: 56px;
+    left: 10px;
+    background-color: rgba(2, 102, 193, 0.062745098);
+  }
+  .training__info-wrapper:nth-child(2)::before {
+    height: 56px;
+    width: 1px;
+    top: 50px;
+    left: 7px;
+  }
+  .training__info-wrapper:nth-child(3)::after {
+    top: -50px;
+    left: 0px;
+  }
+  .training__info-wrapper:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 355px;
+    height: 1px;
+    top: -45px;
+    left: 10px;
+    background-color: rgba(2, 102, 193, 0.062745098);
+  }
+  .training__info-wrapper:nth-child(4)::after {
+    top: -50px;
+    left: 0px;
+  }
+  .training__info-wrapper:nth-child(4)::before {
+    content: none;
+  }
+}
+@media (min-width: 1200px) {
+  .training__wrapper h2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 38px;
+  }
+  .training__text {
+    width: 820px;
+    font-size: 16px;
+    margin-bottom: 47px;
+  }
+  .training__item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 44px;
+  }
+  .training__item img {
+    min-width: 238px;
+  }
+  .training-process h3 {
+    font-size: 21px;
+    margin-bottom: 45px;
+  }
+  .training__info {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .training__info-wrapper::after {
+    top: 50px;
+    left: 0px;
+  }
+  .training__info-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 1px;
+    top: 56px;
+    left: -200px;
+    background-color: rgba(2, 102, 193, 0.062745098);
+  }
+  .training__info-wrapper:nth-child(2)::before {
+    width: 500px;
+    height: 1px;
+    top: 56px;
+    left: 10px;
+  }
+  .training__info-wrapper:nth-child(3)::after {
+    top: 50px;
+    left: 0px;
+  }
+  .training__info-wrapper:nth-child(3)::before {
+    width: 500px;
+    height: 1px;
+    top: 56px;
+    left: 10px;
+  }
+  .training__info-wrapper:nth-child(4)::after {
+    top: 50px;
+    left: 0px;
+  }
+  .training__info-wrapper:nth-child(4)::before {
+    content: "";
+    width: 500px;
+    height: 1px;
+    top: 56px;
+    left: 10px;
   }
 }
 /* @mixin hover-focus {

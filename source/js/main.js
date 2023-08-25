@@ -133,3 +133,23 @@ const swiperTours = new Swiper('.tours__wrapper', {
     },
   },
 });
+
+const swiperTraining = new Swiper('.training__item', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.st-button-next',
+    prevEl: '.st-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
+    },
+  },
+});

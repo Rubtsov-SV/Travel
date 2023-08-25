@@ -2,6 +2,7 @@
   position: relative;
   max-width: 384px;
   margin: 0 auto;
+  margin-bottom: 60px;
 
   h2 {
     position: relative;
@@ -31,6 +32,7 @@
     height: 595px;
     background: url('/img/background-tours.png') no-repeat;
     background-size: 365px 595px;
+    z-index: -1;
   }
 }
 
