@@ -153,6 +153,23 @@
   margin-top: 12px;
 }
 
+.training__icon {
+  --color-1: #ffffff;
+  --color-2: #2d383f83;
+  --color-3: #2d383f;
+
+  &:hover,
+  :focus {
+    --color-2: #2d383f;
+  }
+
+  &:active{
+    --color-1: #0266c1;
+    --color-2: #ffffff;
+    --color-3: #ffffff;
+  }
+}
+
 @media (min-width: $tablet) {
   .training__wrapper {
     h2 {

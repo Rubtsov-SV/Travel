@@ -134,6 +134,9 @@ const swiperTours = new Swiper('.tours__wrapper', {
   },
 });
 
+
+// Слайдер Инструкторы
+
 const swiperTraining = new Swiper('.training__item', {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -148,6 +151,29 @@ const swiperTraining = new Swiper('.training__item', {
     },
     1200: {
       slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
+    },
+  },
+});
+
+
+// Слайдер отызвы
+
+const swiperFeedback = new Swiper('.feedback__slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.sf-button-next',
+    prevEl: '.sf-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 1.5,
       slidesPerGroup: 1,
       spaceBetween: 30,
     },

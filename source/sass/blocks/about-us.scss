@@ -82,6 +82,10 @@
 }
 
 @media (min-width: $desktop) {
+  .about-us {
+    padding-bottom: 100px;
+  }
+
   .about-us__photo {
     width: 808px;
   }
