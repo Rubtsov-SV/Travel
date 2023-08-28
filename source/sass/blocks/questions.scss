@@ -1,0 +1,150 @@
+.questions {
+  min-height: 621px;
+  background: url('/img/background-questions.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.questions__wrapper {
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+    color: #ffffff;
+    margin-top: 180px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+}
+
+.questions__form {
+  margin: 0 auto;
+}
+
+.questions__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #0266c110;
+  margin-bottom: 7px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+}
+
+.questions__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .questions {
+    min-height: 679px;
+    background: url('/img/background-questions-tablet.jpg') no-repeat;
+  }
+
+  .questions__wrapper {
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-top: 190px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      width: 295px;
+    }
+  }
+
+  .questions__form {
+    width: 266px;
+    margin: 0 auto;
+  }
+
+  .questions__input {
+    width: 266px;
+    margin-bottom: 7px;
+  }
+
+  .questions__button {
+    width: 266px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .questions {
+    min-height: 800px;
+    background: url('/img/background-questions-desktop.jpg') no-repeat;
+    background-size: 100%;
+  }
+
+  .questions__wrapper {
+    h2 {
+      font-size: 35px;
+      line-height: 35px;
+      margin-top: 308px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 auto;
+      margin-bottom: 42px;
+      width: 586px;
+    }
+  }
+
+  .questions__form {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .questions__block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .questions__box {
+    margin-right: 30px;
+  }
+
+  .questions__input {
+    width: 340px;
+    height: 64px;
+    border: 1px solid #0266c110;
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  .questions__button {
+    height: 64px;
+}
+}

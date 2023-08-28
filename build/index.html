@@ -1151,7 +1151,31 @@
         </div>
       </section>
 
+      <section class="questions">
+        <div class="questions__wrapper container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+          <form class="questions__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="questions__block">
+              <div class="questions__box">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input id="name" class="questions__input questions__input-name" data-name="name" type="text" name="name"
+                  placeholder="Как к вам обращаться?">
+              </div>
+              <div class="questions__box">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input id="phone" class="questions__input questions__input-phone" data-rules="tel" type="tel" name="tel"
+                  placeholder="Телефон">
+              </div>
+            </div>
+            <button class="questions__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+
+      </section>
+
     </main>
+
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__box">
@@ -1239,6 +1263,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

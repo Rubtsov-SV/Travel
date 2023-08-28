@@ -233,3 +233,78 @@ const swiperPhotogallary = new Swiper('.photogallery__slider', {
     },
   },
 });
+
+// Маска
+
+const phoneValid = document.querySelector('#phone');
+
+if (phone) {
+  IMask(
+    phoneValid,
+      {
+        mask: '+{7}(000)000-00-00',
+      }
+  );
+}
+
+// Проверка на валидность формы
+
+let input = document.querySelector('.questions__input-phone');
+let form = document.querySelector('form');
+
+const eventPhone = () => {
+
+  let rules = input.dataset.rules;
+  let value = input.value;
+  let checkPhone;
+  switch (rules) {
+    case 'tel':
+      checkPhone = /^([\+]?[7|8][\s-(]?[0-9]{3}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})$/.test(value);
+      break;
+  }
+  if (!checkPhone || checkPhone.lenght === 0) {
+    input.style.borderColor = '#FF121F';
+    return false;
+  } else {
+    input.style.borderColor = '#0266c110';
+    return true;
+  }
+};
+let inputName = document.querySelector('.questions__input-name');
+
+const eventName = () => {
+
+  let name = inputName.dataset.name;
+  let value = inputName.value;
+  let checkName;
+  switch (name) {
+    case 'name':
+      checkName = /^[а-яА-ЯёЁa-zA-Z0-9]+$/.test(value);
+      break;
+  }
+  if (!checkName || checkName.lenght === 0) {
+    inputName.style.borderColor = '#FF121F';
+    return false;
+  } else {
+    inputName.style.borderColor = '#0266c110';
+    return true;
+  }
+};
+
+form.addEventListener('submit', (event) => {
+  if (eventPhone() === false && eventName() === false) {
+    event.preventDefault();
+    return false;
+  } else if (eventPhone() === false) {
+    event.preventDefault();
+    return false;
+  } else if (eventName() === false) {
+    event.preventDefault();
+    return false;
+  } else {
+    event.preventDefault();
+    form.submit();
+    form.reset();
+    return true;
+  }
+});
