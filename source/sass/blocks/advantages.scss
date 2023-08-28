@@ -1,0 +1,162 @@
+.advantages__wrapper {
+  margin-bottom: 60px;
+
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #0266c110;
+  margin-bottom: 15px;
+}
+
+.advantages__icon-box {
+  margin-bottom: 25px;
+  height: 42px;
+}
+
+.advantages__header {
+  margin-bottom: 15px;
+
+  h4 {
+    margin: 0;
+    font-size: 13.7px;
+    line-height: 14px;
+    font-weight: 600;
+  }
+}
+
+.advantages__text {
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $tablet) {
+  .advantages__wrapper {
+    margin-bottom: 70px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .advantages__item {
+    width: 47.7%;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(5) {
+      margin-right: 30px;
+    }
+  }
+
+  .advantages__header {
+    h4 {
+      font-size: 15.5px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .advantages__wrapper {
+    margin-bottom: 192px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+  .advantages__list {
+    flex-direction: column;
+    justify-content: start;
+    // flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    height: max-content;
+    width: 380px;
+
+    .advantages__header {
+      h4 {
+        font-size: 17.5px;
+        line-height: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .advantages__slider {
+    position: relative;
+    height: 519px;
+  }
+
+  .advantages-next {
+    position: absolute;
+    top: 300px;
+    right: 46.5%;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+  }
+
+  .advantages-back {
+    position: absolute;
+    top: 300px;
+    right: 50%;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+  }
+
+  .advantages__button-icon {
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+  }
+}

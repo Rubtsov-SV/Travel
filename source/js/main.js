@@ -179,3 +179,45 @@ const swiperFeedback = new Swiper('.feedback__slider', {
     },
   },
 });
+
+
+// Слайдер преимущества
+
+let init = false;
+let swiperAdvantages;
+function swiperCard() {
+  if (window.innerWidth >= 1200) {
+    if (!init) {
+      init = true;
+      swiperAdvantages = new Swiper('.advantages__slider', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // loop: true,
+        navigation: {
+          nextEl: '.sa-button-next',
+          prevEl: '.sa-button-prev',
+        },
+      });
+    }
+  } else if (init) {
+    swiperAdvantages.destroy();
+    init = false;
+  }
+}
+swiperCard();
+window.addEventListener('resize', () => {
+  swiperCard();
+});
+window.addEventListener('load', () => {
+  swiperCard();
+});
+
+// const swiperAdvantages = new Swiper('.advantages__slider', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   loop: true,
+//   navigation: {
+//     nextEl: '.sa-button-next',
+//     prevEl: '.sa-button-prev',
+//   },
+// });
