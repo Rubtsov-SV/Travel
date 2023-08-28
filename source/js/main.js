@@ -190,9 +190,10 @@ function swiperCard() {
     if (!init) {
       init = true;
       swiperAdvantages = new Swiper('.advantages__slider', {
-        slidesPerView: 3,
+        slidesPerView: 3.5,
+        centeredSlides: true,
         spaceBetween: 30,
-        // loop: true,
+        loop: true,
         navigation: {
           nextEl: '.sa-button-next',
           prevEl: '.sa-button-prev',
@@ -212,12 +213,23 @@ window.addEventListener('load', () => {
   swiperCard();
 });
 
-// const swiperAdvantages = new Swiper('.advantages__slider', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   loop: true,
-//   navigation: {
-//     nextEl: '.sa-button-next',
-//     prevEl: '.sa-button-prev',
-//   },
-// });
+// Слайдер фотогаллерея
+
+const swiperPhotogallary = new Swiper('.photogallery__slider', {
+  slidesPerView: 2,
+  spaceBetween: 3,
+  navigation: {
+    nextEl: '.sp-button-next',
+    prevEl: '.sp-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.8,
+      spaceBetween: 6,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 6,
+    },
+  },
+});

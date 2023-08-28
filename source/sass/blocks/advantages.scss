@@ -1,5 +1,5 @@
 .advantages__wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
   h2 {
     font-size: 22px;
@@ -99,7 +99,7 @@
 @media (min-width: $desktop) {
 
   .advantages__wrapper {
-    margin-bottom: 192px;
+    margin-bottom: 0;
 
     h2 {
       font-size: 25px;
@@ -110,7 +110,6 @@
   .advantages__list {
     flex-direction: column;
     justify-content: start;
-    // flex-wrap: nowrap;
   }
 
   .advantages__item {
@@ -131,7 +130,7 @@
 
   .advantages__slider {
     position: relative;
-    height: 519px;
+    height: 400px;
   }
 
   .advantages-next {
