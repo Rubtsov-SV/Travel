@@ -297,6 +297,27 @@
         stroke="#0266C1" stroke-linecap="round" stroke-linejoin="round" />
       <rect x="0.5" y="0.5" width="41" height="41" stroke="#0266C1" />
     </symbol>
+
+    <symbol id="phone-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M19.3236 20.0443C19.0034 20.6753 18.3438 21.0672 17.6426 20.9904C17.3412 20.9575 17.0402 20.9171 16.7396 20.8693C12.8229 20.2465 9.20304 18.3949 6.39895 15.5797C3.59486 12.7646 1.75046 9.1305 1.1301 5.19831C1.08254 4.89683 1.04236 4.59477 1.00952 4.29242C0.933062 3.58844 1.32346 2.92622 1.95195 2.60473L4.70244 1.19777C5.76693 0.653244 7.05498 1.28842 7.42933 2.42743C7.65638 3.11826 7.92452 3.79805 8.23342 4.4631C8.38821 4.79636 8.5524 5.12412 8.72567 5.44606C9.13588 6.20824 8.85917 7.18583 8.0736 7.54431C6.93267 8.06496 6.66094 9.56938 7.54713 10.4591L11.4995 14.427C12.3857 15.3167 13.8842 15.0439 14.4028 13.8985C14.7796 13.0663 15.8009 12.765 16.6118 13.1807C16.8084 13.2814 17.0071 13.3788 17.2078 13.4728C17.9681 13.8287 18.7478 14.1308 19.5413 14.3784C20.6964 14.7389 21.3521 16.0475 20.8029 17.1296L19.3236 20.0443Z"
+        stroke="#2D383F" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+    <symbol id="mail-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21 2.55556V13.4444C21 14.3036 20.3604 15 19.5714 15H2.42857C1.63959 15 1 14.3036 1 13.4444V2.55556M21 2.55556C21 1.69645 20.3604 1 19.5714 1H2.42857C1.63959 1 1 1.69645 1 2.55556M21 2.55556L12.8594 10.1534C11.7895 11.152 10.2106 11.152 9.14062 10.1534L1 2.55556"
+        stroke="#2D383F" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+
+    <symbol id="local-icon" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M15.5 8.14732C15.5 4.19996 12.1421 1 8 1C3.85786 1 0.5 4.19996 0.5 8.14732V8.57782C0.5 10.1572 1.01784 11.6971 1.98114 12.9823L7.98518 20.9927C7.99245 21.0024 8.00756 21.0024 8.01482 20.9927L14.0189 12.9823C14.9822 11.6971 15.5 10.1572 15.5 8.57782V8.14732Z"
+        stroke="#2D383F" stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M6.53407 5.28903C7.46044 4.86389 8.53956 4.86389 9.46593 5.28903C10.3923 5.71417 11.0651 6.51818 11.2939 7.47347C11.5227 8.42875 11.2826 9.43134 10.6415 10.1974C10.0004 10.9635 9.0282 11.4097 8 11.4097C6.9718 11.4097 5.99955 10.9635 5.35848 10.1974C4.7174 9.43134 4.47728 8.42875 4.70608 7.47347C4.93487 6.51818 5.60769 5.71417 6.53407 5.28903Z"
+        stroke="#2D383F" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
   </svg>
 
 
@@ -451,8 +472,6 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination hero__pagination"></div>
           </div>
         </div>
@@ -1171,7 +1190,63 @@
             <button class="questions__button button" type="submit">Отправить</button>
           </form>
         </div>
+      </section>
 
+      <section class="contacts">
+        <div class="contacts__wrapper container">
+          <h2>Контакты</h2>
+          <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+            увлекательными историями и подобрать для вас тур.
+          </p>
+          <div class="contacts__info">
+            <div class="contacts__info-column">
+              <dl>
+                <svg class="contacts__icon" width="22" height="22">
+                  <use xlink:href="#phone-icon"></use>
+                </svg>
+                <dt>Телефон:</dt>
+                <dd>
+                  <a class="contacts__phone" href="tel:89837454545" aria-label="Позвоните нам">8 983 745 45 45</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="contacts__info-column">
+              <dl>
+                <svg class="contacts__icon" width="22" height="16">
+                  <use xlink:href="#mail-icon"></use>
+                </svg>
+                <dt>Email:</dt>
+                <dd>
+                  <a href="mailto:info@lifetour.com" aria-label="Наша электронная почта">info@lifetour.com</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="contacts__info-column">
+              <dl>
+                <svg class="contacts__icon" width="16" height="22">
+                  <use xlink:href="#local-icon"></use>
+                </svg>
+                <dt>Адрес:</dt>
+                <dd>г. Москва, пр-т Мира, д.14, офис 101</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <div style="position:relative;overflow:hidden;">
+              <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+              <a href="https://yandex.ru/maps/213/moscow/house/prospekt_mira_14s1/Z04YcARiT0MDQFtvfXt2dXRgYg==/?ll=37.633598%2C55.774847&utm_medium=mapframe&utm_source=maps&z=17.14"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Мира, 14с1 —
+                Яндекс Карты
+              </a>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=37.633598%2C55.774847&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjczMzc2MxI80KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINC_0YDQvtGB0L_QtdC60YIg0JzQuNGA0LAsIDE00YExIgoN2ocWQhVvGV9C&z=17.14"
+                width="560" height="400" frameborder="1" scroll="false" allowfullscreen="true"
+                style="position:relative;">
+              </iframe>
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>

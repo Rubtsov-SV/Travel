@@ -7,6 +7,15 @@
     font-weight: 800;
     margin: 0;
     margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/img/photogallery-mobile.png") no-repeat;
+      left: 0;
+      width: 189px;
+      height: 26px;
+    }
   }
 
   p {
@@ -76,6 +85,12 @@
       font-size: 25px;
       line-height: 25px;
       margin-bottom: 26px;
+
+      &::after {
+        background: url("/img/photogallery-tablet.png") no-repeat;
+        width: 290px;
+        height: 40px;
+      }
     }
 
     p {
@@ -114,6 +129,12 @@
       font-size: 35px;
       line-height: 35px;
       margin-bottom: 27px;
+
+      &::after {
+        background: url("/img/photogallery-desktop.png") no-repeat;
+        width: 399px;
+        height: 55px;
+      }
     }
 
     p {

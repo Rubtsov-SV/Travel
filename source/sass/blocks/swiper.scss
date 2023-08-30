@@ -14,9 +14,22 @@
   align-items: flex-start;
 }
 
+.swiper-pagination-bullet {
+  border: 1px solid #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
 @media (min-width: $tablet) {
   .hero .swiper {
     height: 850px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -31,6 +44,6 @@
   }
 
   .hero .swiper-pagination-bullets.swiper-pagination-horizontal {
-    right: -563px;
+    left: 417px;
   }
 }
