@@ -137,7 +137,7 @@
 
 @media (min-width: $desktop) {
   .contacts {
-    padding-bottom: 104px;
+    padding-bottom: 115px;
   }
 
   .contacts__wrapper {
@@ -147,6 +147,7 @@
       font-size: 35px;
       line-height: 35px;
       margin-bottom: 26px;
+      margin-top: 15px;
 
       &::after {
         background: url("/img/contacts-desktop.png") no-repeat;
@@ -164,8 +165,8 @@
     flex-direction: column;
 
     dl {
-      margin-bottom: 30px;
-      margin-left: 32px;
+      margin-bottom: 43px;
+      margin-left: 57px;
     }
 
     dt {
@@ -175,10 +176,16 @@
     }
   }
 
+  .contacts__icon {
+    left: -55px;
+    top: 13px;
+  }
+
   .contacts__map {
     position: absolute;
-    bottom: 0;
-    right: 103px;
+    bottom: -19px;
+    right: 121px;
+
     iframe {
       height: 324px;
       width: 585px;

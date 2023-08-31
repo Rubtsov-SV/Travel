@@ -245,7 +245,13 @@
 
 @media (min-width: $desktop) {
   .tours {
+    padding-top: 43px;
     h2 {
+      font-size: 35px;
+      line-height: 35px;
+      width: 345px;
+      margin-bottom: 52px;
+
       &::after {
         width: 542px;
         height: 55px;
@@ -296,6 +302,6 @@
   }
 
   .tours__item {
-    margin-bottom: 52px;
+    margin-bottom: 54px;
 }
 }

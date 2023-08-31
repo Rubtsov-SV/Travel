@@ -85,16 +85,22 @@
 
 @media (min-width: $desktop) {
   .about-us {
-    padding-bottom: 100px;
+    padding-bottom: 31px;
   }
 
   .about-us__photo {
     width: 808px;
+    margin-top: 40px;
+  }
+
+  .feedback-back,
+  .feedback-next {
+    top: -12px;
   }
 
   .about-us__info {
     padding-left: 0;
-    padding-left: 770px;
+    padding-left: 738px;
 
     h2 {
       position: relative;
@@ -114,14 +120,14 @@
     }
 
     h3 {
-      font-size: 18px;
-      line-height: 18px;
-      margin-bottom: 19px;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 12px;
     }
 
     p {
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
   }
 }

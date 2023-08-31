@@ -337,7 +337,8 @@
     h2 {
       font-size: 35px;
       line-height: 35px;
-      margin-bottom: 38px;
+      margin-bottom: 33px;
+      padding-top: 124px;
 
       &::after {
         background: url("/img/bg-header-training-desktop.png") no-repeat;
@@ -352,7 +353,7 @@
   .training__text {
     width: 820px;
     font-size: 16px;
-    margin-bottom: 47px;
+    margin-bottom: 32px;
   }
 
   .training__item {
@@ -370,20 +371,41 @@
   .training-process {
     h3 {
       font-size: 21px;
-      margin-bottom: 45px;
+      margin-bottom: 46 px;
     }
   }
 
   .training__info {
-    column-gap: 0;
-    justify-content: space-between;
-    padding-bottom: 20px;
+    column-gap: 66px;
+    padding-bottom: 79px;
+  }
+
+  .training__card {
+    margin-bottom: 20px;
+
+    h4 {
+      width: 111px;
+    }
+
+    p {
+      line-height: 16px;
+    }
+  }
+
+  .training__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .training-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .training__info-wrapper {
     &::after {
-      top: 50px;
-      left: 0px;
+      top: 74px;
+      left: 2px;
     }
 
     &::before {
@@ -391,7 +413,7 @@
       position: absolute;
       width: 700px;
       height: 1px;
-      top: 56px;
+      top: 78px;
       left: -200px;
       background-color: #0266c110;
     }
@@ -400,36 +422,40 @@
       &::before {
         width: 500px;
         height: 1px;
-        top: 56px;
+        top: 78px;
         left: 10px;
+      }
+
+      &::after {
+        left: 2px;
       }
     }
 
     &:nth-child(3) {
       &::after {
-        top: 50px;
-        left: 0px;
+        top: 74px;
+        left: 2px;
       }
 
       &::before {
         width: 500px;
         height: 1px;
-        top: 56px;
+        top: 78px;
         left: 10px;
       }
     }
 
     &:nth-child(4) {
       &::after {
-        top: 50px;
-        left: 0px;
+        top: 74px;
+        left: 4px;
       }
 
       &::before {
         content: "";
         width: 500px;
         height: 1px;
-        top: 56px;
+        top: 78px;
         left: 10px;
       }
     }

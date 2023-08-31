@@ -146,10 +146,21 @@
 }
 
 @media (min-width: $desktop) {
+  .footer__wrapper {
+    padding-top: 27px;
+  }
+
+  .footer__list {
+    margin-top: 24px;
+    margin-left: -61px;
+    margin-bottom: 10px;
+  }
+
   .footer__phone {
     display: block;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 19px;
 
     &:hover,
     :focus {
@@ -165,8 +176,12 @@
     height: max-content;
   }
 
+  .footer__logo {
+    margin-bottom: 11px;
+  }
+
   .footer__item {
-    margin-right: 32px;
+    margin-right: 25px;
 
     &:last-child {
       margin-right: 0;

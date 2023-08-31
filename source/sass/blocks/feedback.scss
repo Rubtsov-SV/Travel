@@ -153,6 +153,10 @@
 }
 
 @media (min-width: $desktop) {
+  .feedback {
+    padding-bottom: 148px;
+  }
+
   .feedback__wrapper {
     h2 {
       font-size: 35px;
@@ -193,6 +197,11 @@
     width: 442px;
     font-size: 14px;
     line-height: 22px;
-    margin: 15px 0 24px 30px;
+    margin: 15px 0 0 30px;
+  }
+
+  .feedback__text-last {
+    margin-top: 8px;
+    margin-bottom: 25px;
   }
 }

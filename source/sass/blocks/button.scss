@@ -27,3 +27,10 @@
     height: 57px;
   }
 }
+
+@media (min-width: $desktop) {
+  .button {
+    width: 220px;
+    height: 58px;
+  }
+}

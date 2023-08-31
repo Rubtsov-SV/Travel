@@ -134,6 +134,12 @@
 
 @media (min-width: $desktop) {
 
+  .advantages {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 125px;
+  }
+
   .advantages__wrapper {
     margin-bottom: 0;
 
@@ -158,6 +164,7 @@
   .advantages__item {
     height: max-content;
     width: 380px;
+    min-height: 329px;
 
     .advantages__header {
       h4 {
@@ -171,16 +178,33 @@
     }
   }
 
+  .advantages__text {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
   .advantages__slider {
     position: relative;
-    height: 400px;
+    height: 420px;
+  }
+
+  .advantages__icon {
+    width: 54px;
+    height: 54px;
+    margin-top: 15px;
+  }
+
+  .advantages__icon-box {
+    margin-bottom: 58px;
   }
 
   .advantages-next {
     position: absolute;
-    top: 300px;
+    top: 376px;
     right: 46.5%;
-    left: 50.5%;
+    left: 50.2%;
     z-index: 2;
     width: 37px;
     height: 35px;
@@ -190,7 +214,7 @@
 
   .advantages-back {
     position: absolute;
-    top: 300px;
+    top: 376px;
     right: 50%;
     z-index: 2;
     width: 37px;
