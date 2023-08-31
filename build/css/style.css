@@ -2100,7 +2100,7 @@ body {
   z-index: 3;
   position: absolute;
   right: 15px;
-  top: 53px;
+  top: 57px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -2116,7 +2116,7 @@ body {
 .header__burger-close {
   display: block;
   position: absolute;
-  top: 15px;
+  top: 19px;
   width: 26px;
   height: 18.91px;
   background: url("/img/burger.png") no-repeat;
@@ -2263,7 +2263,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 20px;
 }
 
@@ -2294,12 +2294,12 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 125px;
+  height: 92px;
   margin-bottom: 15px;
 }
 
 .footer__item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .footer__item-link {
@@ -2324,6 +2324,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 5px;
 }
 
 .footer__networks {
@@ -2333,7 +2334,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .footer__privacy {
@@ -2343,7 +2344,7 @@ body {
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 4px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2452,13 +2453,13 @@ body {
 }
 .hero {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 96px;
+  padding-top: 40px;
+  padding-bottom: 65px;
 }
 
 .hero__background {
   position: absolute;
-  bottom: 109px;
+  bottom: 68px;
   height: 100%;
   height: 568px;
   width: 100%;
@@ -2473,13 +2474,14 @@ body {
   color: #ffffff;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   max-width: 670px;
 }
 
 .hero__text {
   font-size: 15px;
   font-weight: 400;
+  line-height: 20px;
   color: #ffffff;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -2497,7 +2499,7 @@ body {
 .hero__pagination {
   position: absolute;
   margin-top: 124px;
-  top: 245px;
+  top: 247px;
 }
 
 @media (min-width: 768px) {
@@ -2671,7 +2673,7 @@ body {
 }
 .button {
   width: 180px;
-  height: 58px;
+  height: 52px;
   background-color: #0266c1;
   color: #ffffff;
   border: none;
@@ -2693,14 +2695,14 @@ body {
   position: relative;
   max-width: 384px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 67px;
 }
 .tours h2 {
   position: relative;
   font-size: 22px;
   font-weight: 800;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   width: 156px;
 }
 .tours h2::after {
@@ -2733,7 +2735,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 412px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 .tours__item img {
   height: 412px;
@@ -2759,7 +2761,7 @@ body {
   display: flex;
 }
 .tours__local p {
-  font-size: 12px;
+  font-size: 11.8px;
   line-height: 12px;
   font-weight: 500;
   color: #ffffff;
@@ -2767,23 +2769,24 @@ body {
 
 .tours__direction {
   margin-top: 232px;
-  padding: 9px 22px 8px 14px;
+  padding: 8px 24px 6px 18px;
   background-color: #0266c1;
+  margin-bottom: 16px;
 }
 
 .tours__day {
   position: absolute;
-  top: 175px;
+  top: 185px;
 }
 
 .tours__night {
   position: absolute;
-  top: 175px;
+  top: 185px;
   left: 115px;
 }
 
 .tours__icon-sun, .tours__icon-moon {
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .tours__info {
@@ -2792,14 +2795,14 @@ body {
   display: flex;
 }
 .tours__info p {
-  font-size: 12px;
+  font-size: 11.8px;
   font-weight: 300;
   line-height: 12px;
   color: #ffffff;
   margin: 0;
 }
 .tours__info b {
-  font-size: 12px;
+  font-size: 11.8px;
   font-weight: 700;
   line-height: 12px;
   color: #ffffff;
@@ -2955,10 +2958,10 @@ body {
 
 .training__text {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  margin-bottom: 37px;
+  margin-bottom: 32px;
 }
 
 .training__item {
@@ -2980,7 +2983,7 @@ body {
 .training__card {
   min-height: 385px;
   padding: 20px 20px 20px 20px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
 }
@@ -3002,11 +3005,12 @@ body {
   line-height: 16px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  margin-left: 3px;
 }
 
 .training__info {
-  padding-left: 52px;
+  padding-left: 38px;
   position: relative;
 }
 .training__info p {
@@ -3017,7 +3021,7 @@ body {
 .training__info::before {
   content: "";
   top: 10px;
-  left: 18px;
+  left: 8px;
   position: absolute;
   width: 1px;
   height: 187px;
@@ -3031,14 +3035,17 @@ body {
   margin-bottom: 25px;
   position: relative;
 }
+.training__info-wrapper:last-child {
+  margin-bottom: 14px;
+}
 .training__info-wrapper p {
   margin: 0;
   margin-left: 12px;
 }
 .training__info-wrapper::after {
   content: "";
-  top: 5px;
-  left: -40px;
+  top: 12px;
+  left: -34px;
   position: absolute;
   width: 13px;
   height: 13px;
@@ -3055,13 +3062,13 @@ body {
           justify-content: space-between;
 }
 .training__card-box a {
-  margin-top: 9px;
+  margin-top: 19px;
 }
 
 .training-next {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 4px;
+  right: 0;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -3071,8 +3078,8 @@ body {
 
 .training-back {
   position: absolute;
-  top: 10px;
-  right: 56px;
+  top: 4px;
+  right: 42px;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -3271,7 +3278,7 @@ body {
   font-size: 22px;
   font-weight: 800;
   line-height: 22px;
-  margin-top: 46px;
+  margin-top: 48px;
   margin-bottom: 33px;
   color: #2d383f;
 }
@@ -3375,7 +3382,8 @@ body {
   }
 }
 .feedback {
-  padding-bottom: 50px;
+  padding-bottom: 63px;
+  padding-top: 30px;
 }
 
 .feedback__wrapper {
@@ -3427,13 +3435,18 @@ body {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin: 15px 0 15px 0;
+  margin: 19px 0 0 0;
+}
+
+.feedback__text-last {
+  margin: 0;
+  margin-top: 9px;
 }
 
 .feedback-next {
   position: absolute;
-  top: 0;
-  right: 15px;
+  top: -10px;
+  right: 0;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -3443,8 +3456,8 @@ body {
 
 .feedback-back {
   position: absolute;
-  top: 0;
-  right: 56px;
+  top: -10px;
+  right: 42px;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -3586,7 +3599,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
+  padding: 19px 12px;
   border: 1px solid rgba(2, 102, 193, 0.062745098);
   margin-bottom: 15px;
 }
@@ -3734,6 +3747,7 @@ body {
   font-weight: 800;
   margin: 0;
   margin-bottom: 15px;
+  margin-top: -5px;
 }
 .photogallery__wrapper h2::after {
   content: "";
@@ -3747,7 +3761,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 65px;
+  margin-bottom: 63px;
 }
 
 .photogallery__item {
@@ -3783,7 +3797,7 @@ body {
 
 .photogallery-next {
   position: absolute;
-  top: 120px;
+  top: 118px;
   right: 15px;
   z-index: 2;
   width: 37px;
@@ -3793,8 +3807,8 @@ body {
 
 .photogallery-back {
   position: absolute;
-  top: 120px;
-  right: 60px;
+  top: 118px;
+  right: 56px;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -4048,7 +4062,8 @@ body {
 }
 .contacts {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
+  padding-top: 63px;
 }
 .contacts::after {
   content: "";
@@ -4082,10 +4097,14 @@ body {
   margin-bottom: 30px;
 }
 
+.contacts__info-column:last-child dl {
+  margin-bottom: 52px;
+}
+
 .contacts__info dl {
   position: relative;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
   margin-left: 32px;
 }
 .contacts__info dt {

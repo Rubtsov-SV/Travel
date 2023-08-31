@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
+  padding-top: 63px;
 
   &::after {
     content: "";
@@ -38,13 +39,20 @@
   }
 }
 
+.contacts__info-column {
+  &:last-child dl{
+    margin-bottom: 52px;
+  }
+}
+
 .contacts__info {
   dl {
     position: relative;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
     margin-left: 32px;
   }
+
   dt {
     font-size: 14px;
     font-weight: 600;

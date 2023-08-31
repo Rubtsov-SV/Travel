@@ -2,14 +2,14 @@
   position: relative;
   max-width: 384px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 67px;
 
   h2 {
     position: relative;
     font-size: 22px;
     font-weight: 800;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 23px;
     width: 156px;
 
     &::after {
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   height: 412px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   img {
     height: 412px;
@@ -67,7 +67,7 @@
   display: flex;
 
   p {
-    font-size: 12px;
+    font-size: 11.8px;
     line-height: 12px;
     font-weight: 500;
     color: #ffffff;
@@ -76,30 +76,31 @@
 
 .tours__direction {
   margin-top: 232px;
-  padding: 9px 22px 8px 14px;
+  padding: 8px 24px 6px 18px;
   background-color: #0266c1;
+  margin-bottom: 16px;
 }
 
 .tours__day {
   position: absolute;
-  top: 175px;
+  top: 185px;
 }
 
 .tours__night {
   position: absolute;
-  top: 175px;
+  top: 185px;
   left: 115px;
 }
 
 .tours__icon-sun, .tours__icon-moon {
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .tours__info {
   display: flex;
 
   p {
-    font-size: 12px;
+    font-size: 11.8px;
     font-weight: 300;
     line-height: 12px;
     color: #ffffff;
@@ -107,7 +108,7 @@
   }
 
   b {
-    font-size: 12px;
+    font-size: 11.8px;
     font-weight: 700;
     line-height: 12px;
     color: #ffffff;

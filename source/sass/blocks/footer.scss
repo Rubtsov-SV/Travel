@@ -1,7 +1,7 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 20px;
 }
 
@@ -21,12 +21,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 125px;
+  height: 92px;
   margin-bottom: 15px;
 }
 
 .footer__item {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .footer__item-link {
@@ -46,6 +46,7 @@
 .footer__box-social {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
 }
 
 .footer__networks {
@@ -53,7 +54,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .footer__privacy {
@@ -63,7 +64,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 4px;
   width: max-content;
 

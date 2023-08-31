@@ -1,5 +1,6 @@
 .feedback {
-  padding-bottom: 50px;
+  padding-bottom: 63px;
+  padding-top: 30px;
 }
 
 .feedback__wrapper {
@@ -54,13 +55,18 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin: 15px 0 15px 0;
+  margin: 19px 0 0 0;
+}
+
+.feedback__text-last {
+  margin: 0;
+  margin-top: 9px;
 }
 
 .feedback-next {
   position: absolute;
-  top: 0;
-  right: 15px;
+  top: -10px;
+  right: 0;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -70,8 +76,8 @@
 
 .feedback-back {
   position: absolute;
-  top: 0;
-  right: 56px;
+  top: -10px;
+  right: 42px;
   z-index: 2;
   width: 37px;
   height: 35px;

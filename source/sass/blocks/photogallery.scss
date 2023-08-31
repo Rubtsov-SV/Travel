@@ -7,6 +7,7 @@
     font-weight: 800;
     margin: 0;
     margin-bottom: 15px;
+    margin-top: -5px;
 
     &::after {
       content: "";
@@ -22,7 +23,7 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 }
 
@@ -55,7 +56,7 @@
 
 .photogallery-next {
   position: absolute;
-  top: 120px;
+  top: 118px;
   right: 15px;
   z-index: 2;
   width: 37px;
@@ -65,8 +66,8 @@
 
 .photogallery-back {
   position: absolute;
-  top: 120px;
-  right: 60px;
+  top: 118px;
+  right: 56px;
   z-index: 2;
   width: 37px;
   height: 35px;

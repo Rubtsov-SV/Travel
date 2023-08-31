@@ -21,10 +21,10 @@
 
 .training__text {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  margin-bottom: 37px;
+  margin-bottom: 32px;
 }
 
 .training__item {
@@ -48,7 +48,7 @@
 .training__card {
   min-height: 385px;
   padding: 20px 20px 20px 20px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   box-shadow: 0 0 30px 0 #1c337410;
 
   h4 {
@@ -72,12 +72,13 @@
     line-height: 16px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    margin-left: 3px;
   }
 }
 
 .training__info {
-  padding-left: 52px;
+  padding-left: 38px;
   position: relative;
   p {
     font-size: 12px;
@@ -88,7 +89,7 @@
   &::before {
     content: "";
     top: 10px;
-    left: 18px;
+    left: 8px;
     position: absolute;
     width: 1px;
     height: 187px;
@@ -101,6 +102,10 @@
   margin-bottom: 25px;
   position: relative;
 
+  &:last-child {
+    margin-bottom: 14px;
+  }
+
   p {
     margin: 0;
     margin-left: 12px;
@@ -108,8 +113,8 @@
 
   &::after {
     content: "";
-    top: 5px;
-    left: -40px;
+    top: 12px;
+    left: -34px;
     position: absolute;
     width: 13px;
     height: 13px;
@@ -123,14 +128,14 @@
   justify-content: space-between;
 
   a {
-    margin-top: 9px;
+    margin-top: 19px;
   }
 }
 
 .training-next {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 4px;
+  right: 0;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -140,8 +145,8 @@
 
 .training-back {
   position: absolute;
-  top: 10px;
-  right: 56px;
+  top: 4px;
+  right: 42px;
   z-index: 2;
   width: 37px;
   height: 35px;
