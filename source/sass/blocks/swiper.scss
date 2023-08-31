@@ -22,9 +22,17 @@
   background-color: #ffffff;
 }
 
+.tours .swiper-wrapper {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet) {
   .hero .swiper {
     height: 850px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 11px;
   }
 
   .swiper-pagination-bullet {

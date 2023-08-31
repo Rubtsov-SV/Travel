@@ -119,7 +119,7 @@ const swiperTours = new Swiper('.tours__wrapper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 45,
+      spaceBetween: 12,
     },
     1200: {
       slidesPerView: 3,

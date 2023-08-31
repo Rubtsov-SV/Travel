@@ -163,10 +163,13 @@
   .tours {
     max-width: 100%;
     margin: 0 auto;
+    padding-top: 14px;
 
     h2 {
+      padding-top: 10px;
       font-size: 25px;
       width: 246px;
+      margin-bottom: 42px;
 
       &::after {
         width: 394px;
@@ -183,24 +186,56 @@
     }
   }
 
+  .tours__item {
+    width: 324px;
+    margin-left: 2px;
+    margin-bottom: 55px;
+  }
+
+  .tours__link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .tours__direction {
+    margin-top: 207px;
+    margin-bottom: 28px;
+    width: max-content;
+  }
+
+  .tours__card {
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+  }
+
+  .tours__complexity, .tours__date {
+    margin-right: 27px;
+  }
+
   .tours-next {
+    top: 5px;
     right: 45px;
   }
 
   .tours-back {
+    top: 5px;
     right: 86px;
   }
 
   .tours__day {
     position: static;
-    margin-top: 232px;
-    margin-left: 13px;
+    margin-top: 207px;
+    margin-left: 17px;
   }
 
   .tours__night {
     position: static;
-    margin-top: 232px;
-    margin-left: 13px;
+    margin-top: 207px;
+    margin-left: 17px;
   }
 
   .tours__icon-moon, .tours__icon-sun {

@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $tablet) {
+  .footer__wrapper {
+    padding-top: 38px;
+  }
+
   .footer__box {
     flex-direction: row;
     justify-content: space-between;
@@ -104,9 +108,12 @@
   .footer__list {
     flex-direction: row;
     height: 100%;
+    margin-top: 6px;
   }
 
   .footer__logo {
+    margin-bottom: 35px;
+    padding-top: 5px;
     img {
       width: 118px;
       height: 34px;
@@ -114,7 +121,7 @@
   }
   .footer__item {
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 13px;
 
     &:last-child {
       margin-right: 0;
@@ -128,10 +135,13 @@
   .footer__networks {
     justify-content: center;
     margin-bottom: 0;
+    margin-left: 8px;
   }
 
   .footer__privacy {
     text-align: center;
+    margin-top: 10px;
+    line-height: 12px;
   }
 }
 

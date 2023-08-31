@@ -84,7 +84,7 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding-bottom: 70px;
+    padding-bottom: 58px;
   }
 
   .contacts__wrapper {
@@ -92,6 +92,7 @@
       font-size: 25px;
       line-height: 25px;
       margin-bottom: 20px;
+      margin-top: 20px;
 
       &::after {
         background: url("/img/contacts-tablet.png") no-repeat;

@@ -50,8 +50,12 @@
 }
 
 @media (min-width: $tablet) {
+  .hero {
+    padding-top: 73px;
+  }
+
   .hero__background {
-    bottom: 82px;
+    bottom: 62px;
     min-height: 1024px;
   }
 
@@ -62,11 +66,12 @@
 
   .hero__text {
     font-size: 17px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    line-height: 24px;
   }
 
   .hero__button {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .hero__video-player {
@@ -110,10 +115,11 @@
   }
 
   .hero__pagination {
-    top: 678px;
+    top: 619px;
   }
 }
 @media (min-width: $desktop) {
+
   .hero__background {
     bottom: 90px;
     min-height: 800px;

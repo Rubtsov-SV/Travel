@@ -45,17 +45,19 @@
     position: absolute;
     width: 475px;
     z-index: -1;
+    margin-top: 81px;
   }
 
   .about-us__info {
     padding-left: 0;
-    padding-left: 420px;
+    padding-left: 400px;
 
     h2 {
       position: relative;
       font-size: 25px;
       line-height: 25px;
       margin-bottom: 36px;
+      margin-top: 74px;
 
       &::after {
         content: "";
@@ -71,12 +73,12 @@
     h3 {
       font-size: 18px;
       line-height: 18px;
-      margin-bottom: 19px;
+      margin-bottom: 14px;
     }
 
     p {
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
   }
 }

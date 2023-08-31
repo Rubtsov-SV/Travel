@@ -54,6 +54,11 @@
   }
 }
 
+.advantages__icon {
+  width: 42px;
+  height: 42px;
+}
+
 .advantages__text {
 
   p {
@@ -67,12 +72,12 @@
 
 @media (min-width: $tablet) {
   .advantages__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 18px;
 
     h2 {
       font-size: 25px;
       line-height: 25px;
-      margin-bottom: 50px;
+      margin-bottom: 47px;
 
       &::after {
         background: url("/img/advantages-tablet.png") no-repeat;
@@ -90,8 +95,11 @@
 
   .advantages__item {
     width: 47.7%;
+    min-height: 270px;
     padding: 20px;
+    padding-bottom: 27px;
     margin-bottom: 30px;
+    justify-content: start;
 
     &:nth-child(1) {
       margin-right: 30px;
@@ -102,8 +110,18 @@
     }
 
     &:nth-child(5) {
-      margin-right: 30px;
+      margin-right: 0;
     }
+  }
+
+  .advantages__icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 9px;
+  }
+
+  .advantages__icon-box {
+    margin-bottom: 40px;
   }
 
   .advantages__header {

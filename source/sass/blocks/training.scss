@@ -180,6 +180,11 @@
 @media (min-width: $tablet) {
   .training__wrapper {
     h2 {
+      font-size: 25px;
+      line-height: 25px;
+      padding-top: 84px;
+      margin-bottom: 24px;
+
       &::after {
         background: url("/img/bg-header-training-tablet.png") no-repeat;
         left: 0;
@@ -190,20 +195,36 @@
     }
   }
 
-  .training__item {
+  .training__text {
+    width: 540px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 47px;
+}
 
+  .training__item {
     img {
       width: 176px;
       height: 212px;
       object-fit: cover;
       margin: 0 auto;
     }
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 24px;
+    }
   }
+
+  .training-back, .training-next {
+    top: 6px;
+}
 
   .training__card {
     min-height: 411px;
     padding: 20px 20px 9px 20px;
-    margin-bottom: 37px;
+    margin-bottom: 50px;
 
     h4 {
       margin: 15px 0;
@@ -214,11 +235,36 @@
     }
   }
 
+  .training-process {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 44px;
+    }
+  }
+
+  .training__info-wrapper {
+    margin-bottom: -1px;
+}
+
+  .training__info {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      width: 197px;
+      margin-left: 19px;
+    }
+  }
+
+  .training__icon {
+    width: 23px;
+    height: 25px;
+  }
+
   .training__info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 141px;
+    column-gap: 125px;
     row-gap: 91px;
     padding-left: 0;
 
@@ -247,14 +293,18 @@
       &::before {
         height: 56px;
         width: 1px;
-        top: 50px;
-        left: 7px;
+        top: 52px;
+        left: 0;
+      }
+
+      &::after {
+        left: -5px;
       }
     }
 
     &:nth-child(3) {
       &::after {
-        top: -50px;
+        top: -30px;
         left: 0px;
       }
 
@@ -263,7 +313,7 @@
         position: absolute;
         width: 355px;
         height: 1px;
-        top: -45px;
+        top: -23px;
         left: 10px;
         background-color: #0266c110;
       }
@@ -271,8 +321,8 @@
 
     &:nth-child(4) {
       &::after {
-        top: -50px;
-        left: 0px;
+        top: -29px;
+        left: -6px;
       }
 
       &::before {
