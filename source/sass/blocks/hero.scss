@@ -7,10 +7,9 @@
 .hero__background {
   position: absolute;
   bottom: 68px;
-  height: 100%;
   height: 568px;
   width: 100%;
-  background: url('/img/background-header.jpg') no-repeat;
+  background: url("/img/background-header.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -110,7 +109,7 @@
     width: 56px;
     height: 56px;
     border: 0;
-    background: url('/img/button-video.png') no-repeat;
+    background: url("/img/button-video.png") no-repeat;
     z-index: 2;
   }
 
@@ -118,8 +117,8 @@
     top: 619px;
   }
 }
-@media (min-width: $desktop) {
 
+@media (min-width: $desktop) {
   .hero__background {
     bottom: 70px;
     min-height: 800px;
@@ -155,7 +154,6 @@
   }
 
   .hero__video-player {
-
     iframe {
       width: 482px;
       height: 317px;

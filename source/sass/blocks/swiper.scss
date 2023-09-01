@@ -31,7 +31,8 @@
     height: 850px;
   }
 
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 11px;
   }
 
@@ -51,6 +52,13 @@
     height: 620px;
   }
 
+  .hero .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 422px;
+    top: 376px;
+  }
+}
+
+@media (min-width: 1440px) {
   .hero .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 572px;
     top: 376px;

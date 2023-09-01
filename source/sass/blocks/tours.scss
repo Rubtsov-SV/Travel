@@ -19,7 +19,7 @@
       height: 26px;
       top: 0;
       left: 10px;
-      background: url('/img/tours-mobile.png');
+      background: url("/img/tours-mobile.png");
     }
   }
 
@@ -30,7 +30,7 @@
     right: -169px;
     width: 365px;
     height: 595px;
-    background: url('/img/background-tours.png') no-repeat;
+    background: url("/img/background-tours.png") no-repeat;
     background-size: 365px 595px;
     z-index: -1;
   }
@@ -48,7 +48,7 @@
   }
 }
 
-.tours__card{
+.tours__card {
   padding: 0 20px 27px 20px;
   position: absolute;
   top: 0;
@@ -92,7 +92,8 @@
   left: 115px;
 }
 
-.tours__icon-sun, .tours__icon-moon {
+.tours__icon-sun,
+.tours__icon-moon {
   margin-right: 10px;
 }
 
@@ -116,7 +117,8 @@
   }
 }
 
-.tours__complexity, .tours__date {
+.tours__complexity,
+.tours__date {
   margin-right: 15px;
 }
 
@@ -176,7 +178,7 @@
         height: 40px;
         top: -8px;
         left: 10px;
-        background: url('/img/tours-tablet.png');
+        background: url("/img/tours-tablet.png");
       }
     }
 
@@ -212,7 +214,8 @@
     }
   }
 
-  .tours__complexity, .tours__date {
+  .tours__complexity,
+  .tours__date {
     margin-right: 27px;
   }
 
@@ -238,7 +241,8 @@
     margin-left: 17px;
   }
 
-  .tours__icon-moon, .tours__icon-sun {
+  .tours__icon-moon,
+  .tours__icon-sun {
     margin-right: 8px;
   }
 }
@@ -246,6 +250,7 @@
 @media (min-width: $desktop) {
   .tours {
     padding-top: 43px;
+
     h2 {
       font-size: 35px;
       line-height: 35px;
@@ -257,9 +262,10 @@
         height: 55px;
         top: -8px;
         left: 10px;
-        background: url('/img/tours-desktop.png');
+        background: url("/img/tours-desktop.png");
       }
     }
+
     &::after {
       top: 249px;
       right: -85px;
@@ -270,7 +276,7 @@
     position: relative;
   }
 
-  .tours__card{
+  .tours__card {
     padding: 0 20px 27px 20px;
     width: 100%;
     max-width: 380px;
@@ -283,8 +289,9 @@
     }
   }
 
-  .tours__complexity, .tours__date {
-    margin-right: 43px;
+  .tours__complexity,
+  .tours__date {
+    margin-right: 16px;
   }
 
   .tours__day {
@@ -294,7 +301,7 @@
 
   .tours__night {
     margin-top: 206px;
-    margin-left: 37px;
+    margin-left: 0;
   }
 
   .tours__direction {
@@ -303,5 +310,16 @@
 
   .tours__item {
     margin-bottom: 54px;
+  }
 }
+
+@media (min-width: 1440px) {
+  .tours__night {
+    margin-left: 37px;
+  }
+
+  .tours__complexity,
+  .tours__date {
+    margin-right: 43px;
+  }
 }

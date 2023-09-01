@@ -1,6 +1,6 @@
 .questions {
   min-height: 621px;
-  background: url('/img/background-questions.jpg') no-repeat;
+  background: url("/img/background-questions.jpg") no-repeat;
   background-size: 100%;
 }
 
@@ -34,7 +34,7 @@
 .questions__input {
   width: 100%;
   height: 50px;
-  border: 1px solid #0266c110;
+  border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 7px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -54,7 +54,7 @@
 @media (min-width: $tablet) {
   .questions {
     min-height: 679px;
-    background: url('/img/background-questions-tablet.jpg') no-repeat;
+    background: url("/img/background-questions-tablet.jpg") no-repeat;
   }
 
   .questions__wrapper {
@@ -93,7 +93,7 @@
 @media (min-width: $desktop) {
   .questions {
     min-height: 800px;
-    background: url('/img/background-questions-desktop.jpg') no-repeat;
+    background: url("/img/background-questions-desktop.jpg") no-repeat;
     background-size: 100%;
   }
 
@@ -133,7 +133,7 @@
   .questions__input {
     width: 340px;
     height: 64px;
-    border: 1px solid #0266c110;
+    border: 1px solid rgba(2, 102, 193, 0.1);
     margin-bottom: 0;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -148,5 +148,5 @@
   .questions__button {
     height: 64px;
     margin-top: 0;
-}
+  }
 }

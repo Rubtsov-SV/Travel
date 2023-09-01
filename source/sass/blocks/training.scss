@@ -49,7 +49,7 @@
   min-height: 385px;
   padding: 20px 20px 20px 20px;
   margin-bottom: 36px;
-  box-shadow: 0 0 30px 0 #1c337410;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   h4 {
     font-size: 14px;
@@ -80,6 +80,7 @@
 .training__info {
   padding-left: 38px;
   position: relative;
+
   p {
     font-size: 12px;
     line-height: 18px;
@@ -93,7 +94,7 @@
     position: absolute;
     width: 1px;
     height: 187px;
-    background-color: #0266c110;
+    background-color: rgba(2, 102, 193, 0.1);
   }
 }
 
@@ -162,7 +163,7 @@
 
 .training__icon {
   --color-1: #ffffff;
-  --color-2: #2d383f83;
+  --color-2: rgba(45, 56, 63, 0.51);
   --color-3: #2d383f;
 
   &:hover,
@@ -170,7 +171,7 @@
     --color-2: #2d383f;
   }
 
-  &:active{
+  &:active {
     --color-1: #0266c1;
     --color-2: #ffffff;
     --color-3: #ffffff;
@@ -188,7 +189,7 @@
       &::after {
         background: url("/img/bg-header-training-tablet.png") no-repeat;
         left: 0;
-        top: -11px;
+        top: 72px;
         width: 221px;
         height: 40px;
       }
@@ -200,7 +201,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 47px;
-}
+  }
 
   .training__item {
     img {
@@ -217,9 +218,10 @@
     }
   }
 
-  .training-back, .training-next {
+  .training-back,
+  .training-next {
     top: 6px;
-}
+  }
 
   .training__card {
     min-height: 411px;
@@ -242,19 +244,6 @@
     }
   }
 
-  .training__info-wrapper {
-    margin-bottom: -1px;
-}
-
-  .training__info {
-    p {
-      font-size: 14px;
-      line-height: 22px;
-      width: 197px;
-      margin-left: 19px;
-    }
-  }
-
   .training__icon {
     width: 23px;
     height: 25px;
@@ -271,12 +260,21 @@
     &::before {
       content: none;
     }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      width: 197px;
+      margin-left: 19px;
+    }
   }
 
   .training__info-wrapper {
+    margin-bottom: -1px;
+
     &::after {
       top: 50px;
-      left: 0px;
+      left: 0;
     }
 
     &::before {
@@ -286,7 +284,7 @@
       height: 1px;
       top: 56px;
       left: 10px;
-      background-color: #0266c110;
+      background-color: rgba(2, 102, 193, 0.1);
     }
 
     &:nth-child(2) {
@@ -305,7 +303,7 @@
     &:nth-child(3) {
       &::after {
         top: -30px;
-        left: 0px;
+        left: 0;
       }
 
       &::before {
@@ -315,7 +313,7 @@
         height: 1px;
         top: -23px;
         left: 10px;
-        background-color: #0266c110;
+        background-color: rgba(2, 102, 193, 0.1);
       }
     }
 
@@ -343,7 +341,7 @@
       &::after {
         background: url("/img/bg-header-training-desktop.png") no-repeat;
         left: 0;
-        top: -11px;
+        top: 110px;
         width: 304px;
         height: 55px;
       }
@@ -364,7 +362,7 @@
     }
 
     img {
-      min-width: 238px;
+      min-width: 100%;
     }
   }
 
@@ -376,7 +374,7 @@
   }
 
   .training__info {
-    column-gap: 66px;
+    column-gap: 0;
     padding-bottom: 79px;
   }
 
@@ -415,7 +413,7 @@
       height: 1px;
       top: 78px;
       left: -200px;
-      background-color: #0266c110;
+      background-color: rgba(2, 102, 193, 0.1);
     }
 
     &:nth-child(2) {
@@ -459,5 +457,11 @@
         left: 10px;
       }
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .training__info {
+    column-gap: 66px;
   }
 }
