@@ -2169,8 +2169,8 @@ body {
           box-shadow: inset 0 -1px 0 0 #ffffff;
 }
 .header__item:active {
-  -webkit-box-shadow: #ffffff 0px 0px 0px 1px inset;
-          box-shadow: #ffffff 0px 0px 0px 1px inset;
+  -webkit-box-shadow: #ffffff 0 0 0 1px inset;
+          box-shadow: #ffffff 0 0 0 1px inset;
 }
 
 .header__box {
@@ -2317,8 +2317,8 @@ body {
           box-shadow: inset 0 -1px 0 0 #2d383f;
 }
 .footer__item-link:active {
-  -webkit-box-shadow: #2d383f 0px 0px 0px 1px inset;
-          box-shadow: #2d383f 0px 0px 0px 1px inset;
+  -webkit-box-shadow: #2d383f 0 0 0 1px inset;
+          box-shadow: #2d383f 0 0 0 1px inset;
 }
 
 .footer__box-social {
@@ -2366,7 +2366,7 @@ body {
 
 .footer__icon {
   --color-1: #ffffff;
-  --color-2: #2d383f83;
+  --color-2: rgba(45, 56, 63, 0.5);
   --color-3: #2d383f;
 }
 .footer__icon:hover,
@@ -2465,6 +2465,10 @@ body {
   .footer__logo {
     margin-bottom: 11px;
   }
+  .footer__logo img {
+    width: 205px;
+    height: 60px;
+  }
   .footer__item {
     margin-right: 6px;
   }
@@ -2473,10 +2477,6 @@ body {
   }
   .footer__item-link {
     font-size: 16px;
-  }
-  .footer__logo img {
-    width: 205px;
-    height: 60px;
   }
 }
 @media (min-width: 1440px) {
@@ -2493,7 +2493,6 @@ body {
 .hero__background {
   position: absolute;
   bottom: 68px;
-  height: 100%;
   height: 568px;
   width: 100%;
   background: url("/img/background-header.jpg") no-repeat;
@@ -2693,7 +2692,8 @@ body {
   .hero .swiper {
     height: 850px;
   }
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 11px;
   }
   .swiper-pagination-bullet {
@@ -2848,7 +2848,8 @@ body {
   left: 115px;
 }
 
-.tours__icon-sun, .tours__icon-moon {
+.tours__icon-sun,
+.tours__icon-moon {
   margin-right: 10px;
 }
 
@@ -2872,7 +2873,8 @@ body {
   margin: 0;
 }
 
-.tours__complexity, .tours__date {
+.tours__complexity,
+.tours__date {
   margin-right: 15px;
 }
 
@@ -2962,7 +2964,8 @@ body {
     font-weight: 700;
     margin-bottom: 35px;
   }
-  .tours__complexity, .tours__date {
+  .tours__complexity,
+.tours__date {
     margin-right: 27px;
   }
   .tours-next {
@@ -2983,7 +2986,8 @@ body {
     margin-top: 207px;
     margin-left: 17px;
   }
-  .tours__icon-moon, .tours__icon-sun {
+  .tours__icon-moon,
+.tours__icon-sun {
     margin-right: 8px;
   }
 }
@@ -3022,7 +3026,8 @@ body {
     margin: 0;
     margin-bottom: 38px;
   }
-  .tours__complexity, .tours__date {
+  .tours__complexity,
+.tours__date {
     margin-right: 16px;
   }
   .tours__day {
@@ -3044,7 +3049,8 @@ body {
   .tours__night {
     margin-left: 37px;
   }
-  .tours__complexity, .tours__date {
+  .tours__complexity,
+.tours__date {
     margin-right: 43px;
   }
 }
@@ -3094,8 +3100,8 @@ body {
   min-height: 385px;
   padding: 20px 20px 20px 20px;
   margin-bottom: 36px;
-  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
-          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 .training__card h4 {
   font-size: 14px;
@@ -3135,7 +3141,7 @@ body {
   position: absolute;
   width: 1px;
   height: 187px;
-  background-color: rgba(2, 102, 193, 0.062745098);
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .training__info-wrapper {
@@ -3205,7 +3211,7 @@ body {
 
 .training__icon {
   --color-1: #ffffff;
-  --color-2: #2d383f83;
+  --color-2: rgba(45, 56, 63, 0.51);
   --color-3: #2d383f;
 }
 .training__icon:hover,
@@ -3250,7 +3256,8 @@ body {
     line-height: 18px;
     margin-bottom: 24px;
   }
-  .training-back, .training-next {
+  .training-back,
+.training-next {
     top: 6px;
   }
   .training__card {
@@ -3267,15 +3274,6 @@ body {
   .training-process h3 {
     font-size: 18px;
     margin-bottom: 44px;
-  }
-  .training__info-wrapper {
-    margin-bottom: -1px;
-  }
-  .training__info p {
-    font-size: 14px;
-    line-height: 22px;
-    width: 197px;
-    margin-left: 19px;
   }
   .training__icon {
     width: 23px;
@@ -3300,9 +3298,18 @@ body {
   .training__info::before {
     content: none;
   }
+  .training__info p {
+    font-size: 14px;
+    line-height: 22px;
+    width: 197px;
+    margin-left: 19px;
+  }
+  .training__info-wrapper {
+    margin-bottom: -1px;
+  }
   .training__info-wrapper::after {
     top: 50px;
-    left: 0px;
+    left: 0;
   }
   .training__info-wrapper::before {
     content: "";
@@ -3311,7 +3318,7 @@ body {
     height: 1px;
     top: 56px;
     left: 10px;
-    background-color: rgba(2, 102, 193, 0.062745098);
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .training__info-wrapper:nth-child(2)::before {
     height: 56px;
@@ -3324,7 +3331,7 @@ body {
   }
   .training__info-wrapper:nth-child(3)::after {
     top: -30px;
-    left: 0px;
+    left: 0;
   }
   .training__info-wrapper:nth-child(3)::before {
     content: "";
@@ -3333,7 +3340,7 @@ body {
     height: 1px;
     top: -23px;
     left: 10px;
-    background-color: rgba(2, 102, 193, 0.062745098);
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .training__info-wrapper:nth-child(4)::after {
     top: -29px;
@@ -3408,7 +3415,7 @@ body {
     height: 1px;
     top: 78px;
     left: -200px;
-    background-color: rgba(2, 102, 193, 0.062745098);
+    background-color: rgba(2, 102, 193, 0.1);
   }
   .training__info-wrapper:nth-child(2)::before {
     width: 500px;
@@ -3493,7 +3500,6 @@ body {
     margin-top: 81px;
   }
   .about-us__info {
-    padding-left: 0;
     padding-left: 400px;
   }
   .about-us__info h2 {
@@ -3535,7 +3541,6 @@ body {
     top: -12px;
   }
   .about-us__info {
-    padding-left: 0;
     padding-left: 738px;
   }
   .about-us__info h2 {
@@ -3594,8 +3599,8 @@ body {
 .feedback__item {
   width: 100%;
   padding: 20px;
-  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
-          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.062745098);
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 .feedback__item h4 {
   font-size: 12px;
@@ -3676,8 +3681,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .feedback__item {
     min-width: 560px;
   }
   .feedback__item h4 {
@@ -3693,7 +3696,8 @@ body {
   .feedback-next {
     right: 45px;
   }
-  .feedback-back, .feedback-next {
+  .feedback-back,
+.feedback-next {
     top: -15px;
   }
   .feedback__photo {
@@ -3815,7 +3819,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 19px 12px;
-  border: 1px solid rgba(2, 102, 193, 0.062745098);
+  border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 15px;
 }
 
@@ -4177,7 +4181,7 @@ body {
 .questions__input {
   width: 100%;
   height: 50px;
-  border: 1px solid rgba(2, 102, 193, 0.062745098);
+  border: 1px solid rgba(2, 102, 193, 0.1);
   margin-bottom: 7px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -4289,7 +4293,7 @@ body {
   .questions__input {
     width: 340px;
     height: 64px;
-    border: 1px solid rgba(2, 102, 193, 0.062745098);
+    border: 1px solid rgba(2, 102, 193, 0.1);
     margin-bottom: 0;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -4330,7 +4334,7 @@ body {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: rgba(45, 56, 63, 0.062745098);
+  background-color: rgba(45, 56, 63, 0.1);
   bottom: 0;
 }
 
