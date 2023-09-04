@@ -331,7 +331,9 @@
 }
 
 @media (min-width: $desktop) {
-  .training__wrapper {
+  .training {
+    max-width: 1680px;
+
     h2 {
       font-size: 35px;
       line-height: 35px;

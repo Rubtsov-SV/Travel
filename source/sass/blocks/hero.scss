@@ -54,7 +54,7 @@
   }
 
   .hero__background {
-    bottom: 62px;
+    bottom: 155px;
     min-height: 1024px;
   }
 
@@ -121,8 +121,11 @@
 @media (min-width: $desktop) {
   .hero__background {
     bottom: 70px;
-    min-height: 800px;
     text-align: left;
+  }
+
+  .hero__wrapper {
+    max-width: 1680px;
   }
 
   .hero__header {
@@ -166,6 +169,7 @@
 
   .hero__info {
     display: flex;
+    padding-bottom: 61px;
 
     p {
       margin: 0;

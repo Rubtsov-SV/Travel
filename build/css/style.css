@@ -2093,6 +2093,11 @@ body {
 }
 
 .header__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -2215,6 +2220,9 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .header__box {
+    max-width: 1680px;
+  }
   .header__burger-close {
     display: none;
   }
@@ -2223,6 +2231,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2235,6 +2245,7 @@ body {
     padding-top: 0;
     background-color: rgba(255, 255, 255, 0);
     width: auto;
+    max-width: 650px;
   }
   .header__item {
     padding-left: 4px;
@@ -2293,18 +2304,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 92px;
+  height: 100%;
   margin-bottom: 15px;
+  max-width: 650px;
 }
 
 .footer__item {
   margin-bottom: 5px;
+  width: 145px;
 }
 
 .footer__item-link {
@@ -2399,6 +2412,7 @@ body {
             flex-direction: row;
     height: 100%;
     margin-top: 6px;
+    max-width: 480px;
   }
   .footer__logo {
     margin-bottom: 35px;
@@ -2411,6 +2425,9 @@ body {
   .footer__item {
     margin-bottom: 0;
     margin-right: 13px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .footer__item:last-child {
     margin-right: 0;
@@ -2436,11 +2453,13 @@ body {
 @media (min-width: 1200px) {
   .footer__wrapper {
     padding-top: 27px;
+    max-width: 1680px;
   }
   .footer__list {
     margin-top: 24px;
     margin-left: -61px;
     margin-bottom: 10px;
+    max-width: 650px;
   }
   .footer__phone {
     display: block;
@@ -2539,7 +2558,7 @@ body {
     padding-top: 73px;
   }
   .hero__background {
-    bottom: 62px;
+    bottom: 155px;
     min-height: 1024px;
   }
   .hero__header {
@@ -2596,8 +2615,10 @@ body {
 @media (min-width: 1200px) {
   .hero__background {
     bottom: 70px;
-    min-height: 800px;
     text-align: left;
+  }
+  .hero__wrapper {
+    max-width: 1680px;
   }
   .hero__header {
     font-size: 77px;
@@ -2634,6 +2655,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 61px;
   }
   .hero__info p {
     margin: 0;
@@ -2690,7 +2712,7 @@ body {
 
 @media (min-width: 768px) {
   .hero .swiper {
-    height: 850px;
+    height: 100%;
   }
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -2709,7 +2731,7 @@ body {
     text-align: left;
   }
   .hero .swiper {
-    height: 620px;
+    height: 100%;
   }
   .hero .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: 422px;
@@ -2994,6 +3016,7 @@ body {
 @media (min-width: 1200px) {
   .tours {
     padding-top: 43px;
+    width: 1680px;
   }
   .tours h2 {
     font-size: 35px;
@@ -3351,13 +3374,16 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .training__wrapper h2 {
+  .training {
+    max-width: 1680px;
+  }
+  .training h2 {
     font-size: 35px;
     line-height: 35px;
     margin-bottom: 33px;
     padding-top: 124px;
   }
-  .training__wrapper h2::after {
+  .training h2::after {
     background: url("/img/bg-header-training-desktop.png") no-repeat;
     left: 0;
     top: 110px;
@@ -3530,6 +3556,7 @@ body {
 }
 @media (min-width: 1200px) {
   .about-us {
+    max-width: 1800px;
     padding-bottom: 31px;
   }
   .about-us__photo {
@@ -3944,6 +3971,9 @@ body {
     min-height: 329px;
   }
   .advantages__item .advantages__header h4 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     font-size: 17.5px;
     line-height: 18px;
   }
@@ -4448,6 +4478,7 @@ body {
   }
   .contacts__wrapper {
     position: relative;
+    max-width: 1680px;
   }
   .contacts__wrapper h2 {
     font-size: 35px;

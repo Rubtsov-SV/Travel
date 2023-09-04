@@ -19,14 +19,16 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 92px;
+  height: 100%;
   margin-bottom: 15px;
+  max-width: 650px;
 }
 
 .footer__item {
   margin-bottom: 5px;
+  width: 145px;
 }
 
 .footer__item-link {
@@ -109,6 +111,7 @@
     flex-direction: row;
     height: 100%;
     margin-top: 6px;
+    max-width: 480px;
   }
 
   .footer__logo {
@@ -124,6 +127,7 @@
   .footer__item {
     margin-bottom: 0;
     margin-right: 13px;
+    width: max-content;
 
     &:last-child {
       margin-right: 0;
@@ -150,12 +154,14 @@
 @media (min-width: $desktop) {
   .footer__wrapper {
     padding-top: 27px;
+    max-width: 1680px;
   }
 
   .footer__list {
     margin-top: 24px;
     margin-left: -61px;
     margin-bottom: 10px;
+    max-width: 650px;
   }
 
   .footer__phone {

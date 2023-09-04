@@ -17,6 +17,8 @@
 }
 
 .header__phone {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -140,6 +142,10 @@
 }
 
 @media (min-width: $desktop) {
+  .header__box {
+    max-width: 1680px;
+  }
+
   .header__burger-close {
     display: none;
   }
@@ -147,6 +153,7 @@
   .header__list {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     font-weight: 400;
     font-size: 16px;
@@ -156,6 +163,7 @@
     padding-top: 0;
     background-color: rgba(255, 255, 255, 0);
     width: auto;
+    max-width: 650px;
   }
 
   .header__item {

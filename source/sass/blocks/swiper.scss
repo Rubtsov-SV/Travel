@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet) {
   .hero .swiper {
-    height: 850px;
+    height: 100%;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -49,7 +49,7 @@
   }
 
   .hero .swiper {
-    height: 620px;
+    height: 100%;
   }
 
   .hero .swiper-pagination-bullets.swiper-pagination-horizontal {
