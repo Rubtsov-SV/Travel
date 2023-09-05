@@ -19,7 +19,7 @@
       height: 26px;
       top: 0;
       left: 10px;
-      background: url("/img/tours-mobile.png");
+      background: url("../img/tours-mobile.png");
     }
   }
 
@@ -30,7 +30,7 @@
     right: -169px;
     width: 365px;
     height: 595px;
-    background: url("/img/background-tours.png") no-repeat;
+    background: url("../img/background-tours.png") no-repeat;
     background-size: 365px 595px;
     z-index: -1;
   }
@@ -178,7 +178,7 @@
         height: 40px;
         top: -8px;
         left: 10px;
-        background: url("/img/tours-tablet.png");
+        background: url("../img/tours-tablet.png");
       }
     }
 
@@ -263,7 +263,7 @@
         height: 55px;
         top: -8px;
         left: 10px;
-        background: url("/img/tours-desktop.png");
+        background: url("../img/tours-desktop.png");
       }
     }
 

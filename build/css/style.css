@@ -2124,7 +2124,7 @@ body {
   top: 19px;
   width: 26px;
   height: 18.91px;
-  background: url("/img/burger.png") no-repeat;
+  background: url("../img/burger.png") no-repeat;
 }
 
 .header__burger-open {
@@ -2134,7 +2134,7 @@ body {
   left: 15px;
   width: 20px;
   height: 20px;
-  background: url("/img/burger-close.png") no-repeat;
+  background: url("../img/burger-close.png") no-repeat;
 }
 
 .header__list {
@@ -2514,7 +2514,7 @@ body {
   bottom: 68px;
   height: 568px;
   width: 100%;
-  background: url("/img/background-header.jpg") no-repeat;
+  background: url("../img/background-header.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -2605,7 +2605,8 @@ body {
     width: 56px;
     height: 56px;
     border: 0;
-    background: url("/img/button-video.png") no-repeat;
+    background-image: url("../img/button-video.png");
+    background-repeat: no-repeat;
     z-index: 2;
   }
   .hero__pagination {
@@ -2797,7 +2798,7 @@ body {
   height: 26px;
   top: 0;
   left: 10px;
-  background: url("/img/tours-mobile.png");
+  background: url("../img/tours-mobile.png");
 }
 .tours::after {
   position: absolute;
@@ -2806,7 +2807,7 @@ body {
   right: -169px;
   width: 365px;
   height: 595px;
-  background: url("/img/background-tours.png") no-repeat;
+  background: url("../img/background-tours.png") no-repeat;
   background-size: 365px 595px;
   z-index: -1;
 }
@@ -2958,7 +2959,7 @@ body {
     height: 40px;
     top: -8px;
     left: 10px;
-    background: url("/img/tours-tablet.png");
+    background: url("../img/tours-tablet.png");
   }
   .tours::after {
     top: 249px;
@@ -3029,7 +3030,7 @@ body {
     height: 55px;
     top: -8px;
     left: 10px;
-    background: url("/img/tours-desktop.png");
+    background: url("../img/tours-desktop.png");
   }
   .tours::after {
     top: 249px;
@@ -3088,7 +3089,7 @@ body {
 .training__wrapper h2::after {
   content: "";
   position: absolute;
-  background: url("/img/bg-header-training-mobile.png") no-repeat;
+  background: url("../img/bg-header-training-mobile.png") no-repeat;
   left: 0;
   top: 0;
   width: 144px;
@@ -3255,7 +3256,7 @@ body {
     margin-bottom: 24px;
   }
   .training__wrapper h2::after {
-    background: url("/img/bg-header-training-tablet.png") no-repeat;
+    background: url("../img/bg-header-training-tablet.png") no-repeat;
     left: 0;
     top: 72px;
     width: 221px;
@@ -3384,7 +3385,7 @@ body {
     padding-top: 124px;
   }
   .training h2::after {
-    background: url("/img/bg-header-training-desktop.png") no-repeat;
+    background: url("../img/bg-header-training-desktop.png") no-repeat;
     left: 0;
     top: 110px;
     width: 304px;
@@ -3493,7 +3494,7 @@ body {
 .about-us__info h2::after {
   content: "";
   position: absolute;
-  background: url("/img/bg-header-about-us-mobile.png") no-repeat;
+  background: url("../img/bg-header-about-us-mobile.png") no-repeat;
   left: 0;
   width: 80px;
   height: 26px;
@@ -3538,7 +3539,7 @@ body {
   .about-us__info h2::after {
     content: "";
     position: absolute;
-    background: url("/img/bg-header-about-us-tablet.png") no-repeat;
+    background: url("../img/bg-header-about-us-tablet.png") no-repeat;
     left: 0;
     top: -6px;
     width: 122px;
@@ -3579,7 +3580,7 @@ body {
   .about-us__info h2::after {
     content: "";
     position: absolute;
-    background: url("/img/bg-header-about-us-desktop.png") no-repeat;
+    background: url("../img/bg-header-about-us-desktop.png") no-repeat;
     left: 0;
     top: -6px;
     width: 168px;
@@ -3698,7 +3699,7 @@ body {
     margin-bottom: 30px;
   }
   .feedback__wrapper h2::after {
-    background: url("/img/feedback-tablet.png") no-repeat;
+    background: url("../img/feedback-tablet.png") no-repeat;
     left: 0;
     top: -6px;
     width: 175px;
@@ -3754,7 +3755,7 @@ body {
     margin-bottom: 31px;
   }
   .feedback__wrapper h2::after {
-    background: url("/img/feedback-desktop.png") no-repeat;
+    background: url("../img/feedback-desktop.png") no-repeat;
     left: 0;
     top: -9px;
     width: 241px;
@@ -3813,7 +3814,7 @@ body {
 .advantages__wrapper h2::after {
   content: "";
   position: absolute;
-  background: url("/img/advantages-mobile.png") no-repeat;
+  background: url("../img/advantages-mobile.png") no-repeat;
   left: -14px;
   width: 218px;
   height: 26px;
@@ -3888,7 +3889,7 @@ body {
     margin-bottom: 47px;
   }
   .advantages__wrapper h2::after {
-    background: url("/img/advantages-tablet.png") no-repeat;
+    background: url("../img/advantages-tablet.png") no-repeat;
     left: -69px;
     width: 336px;
     height: 40px;
@@ -3949,7 +3950,7 @@ body {
     margin-bottom: 50px;
   }
   .advantages__wrapper h2::after {
-    background: url("/img/advantages-desktop.png") no-repeat;
+    background: url("../img/advantages-desktop.png") no-repeat;
     left: -100px;
     width: 461px;
     height: 55px;
@@ -4036,7 +4037,7 @@ body {
 .photogallery__wrapper h2::after {
   content: "";
   position: absolute;
-  background: url("/img/photogallery-mobile.png") no-repeat;
+  background: url("../img/photogallery-mobile.png") no-repeat;
   left: 0;
   width: 189px;
   height: 26px;
@@ -4112,7 +4113,7 @@ body {
     margin-bottom: 26px;
   }
   .photogallery__wrapper h2::after {
-    background: url("/img/photogallery-tablet.png") no-repeat;
+    background: url("../img/photogallery-tablet.png") no-repeat;
     width: 290px;
     height: 40px;
     left: 45px;
@@ -4153,7 +4154,7 @@ body {
     margin-bottom: 27px;
   }
   .photogallery__wrapper h2::after {
-    background: url("/img/photogallery-desktop.png") no-repeat;
+    background: url("../img/photogallery-desktop.png") no-repeat;
     width: 399px;
     height: 55px;
     left: 120px;
@@ -4180,7 +4181,7 @@ body {
 }
 .questions {
   min-height: 621px;
-  background: url("/img/background-questions.jpg") no-repeat;
+  background: url("../img/background-questions.jpg") no-repeat;
   background-size: 100%;
 }
 
@@ -4250,7 +4251,7 @@ body {
 @media (min-width: 768px) {
   .questions {
     min-height: 679px;
-    background: url("/img/background-questions-tablet.jpg") no-repeat;
+    background: url("../img/background-questions-tablet.jpg") no-repeat;
   }
   .questions__wrapper h2 {
     font-size: 25px;
@@ -4281,7 +4282,7 @@ body {
 @media (min-width: 1200px) {
   .questions {
     min-height: 800px;
-    background: url("/img/background-questions-desktop.jpg") no-repeat;
+    background: url("../img/background-questions-desktop.jpg") no-repeat;
     background-size: 100%;
   }
   .questions__wrapper h2 {
@@ -4378,7 +4379,7 @@ body {
 .contacts__wrapper h2::after {
   content: "";
   position: absolute;
-  background: url("/img/contacts-mobile.png") no-repeat;
+  background: url("../img/contacts-mobile.png") no-repeat;
   left: 0;
   width: 140px;
   height: 26px;
@@ -4437,7 +4438,7 @@ body {
     margin-top: 20px;
   }
   .contacts__wrapper h2::after {
-    background: url("/img/contacts-tablet.png") no-repeat;
+    background: url("../img/contacts-tablet.png") no-repeat;
     width: 215px;
     height: 40px;
     left: 45px;
@@ -4487,7 +4488,7 @@ body {
     margin-top: 15px;
   }
   .contacts__wrapper h2::after {
-    background: url("/img/contacts-desktop.png") no-repeat;
+    background: url("../img/contacts-desktop.png") no-repeat;
     width: 296px;
     height: 55px;
     left: 120px;

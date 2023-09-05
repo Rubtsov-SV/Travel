@@ -10,7 +10,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/img/bg-header-training-mobile.png") no-repeat;
+      background: url("../img/bg-header-training-mobile.png") no-repeat;
       left: 0;
       top: 0;
       width: 144px;
@@ -187,7 +187,7 @@
       margin-bottom: 24px;
 
       &::after {
-        background: url("/img/bg-header-training-tablet.png") no-repeat;
+        background: url("../img/bg-header-training-tablet.png") no-repeat;
         left: 0;
         top: 72px;
         width: 221px;
@@ -341,7 +341,7 @@
       padding-top: 124px;
 
       &::after {
-        background: url("/img/bg-header-training-desktop.png") no-repeat;
+        background: url("../img/bg-header-training-desktop.png") no-repeat;
         left: 0;
         top: 110px;
         width: 304px;

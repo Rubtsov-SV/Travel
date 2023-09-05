@@ -11,7 +11,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/img/photogallery-mobile.png") no-repeat;
+      background: url("../img/photogallery-mobile.png") no-repeat;
       left: 0;
       width: 189px;
       height: 26px;
@@ -87,7 +87,7 @@
       margin-bottom: 26px;
 
       &::after {
-        background: url("/img/photogallery-tablet.png") no-repeat;
+        background: url("../img/photogallery-tablet.png") no-repeat;
         width: 290px;
         height: 40px;
         left: 45px;
@@ -140,7 +140,7 @@
       margin-bottom: 27px;
 
       &::after {
-        background: url("/img/photogallery-desktop.png") no-repeat;
+        background: url("../img/photogallery-desktop.png") no-repeat;
         width: 399px;
         height: 55px;
         left: 120px;

@@ -24,7 +24,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/img/contacts-mobile.png") no-repeat;
+      background: url("../img/contacts-mobile.png") no-repeat;
       left: 0;
       width: 140px;
       height: 26px;
@@ -96,7 +96,7 @@
       margin-top: 20px;
 
       &::after {
-        background: url("/img/contacts-tablet.png") no-repeat;
+        background: url("../img/contacts-tablet.png") no-repeat;
         width: 215px;
         height: 40px;
         left: 45px;
@@ -153,7 +153,7 @@
       margin-top: 15px;
 
       &::after {
-        background: url("/img/contacts-desktop.png") no-repeat;
+        background: url("../img/contacts-desktop.png") no-repeat;
         width: 296px;
         height: 55px;
         left: 120px;

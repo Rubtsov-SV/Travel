@@ -11,7 +11,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/img/bg-header-about-us-mobile.png") no-repeat;
+      background: url("../img/bg-header-about-us-mobile.png") no-repeat;
       left: 0;
       width: 80px;
       height: 26px;
@@ -61,7 +61,7 @@
       &::after {
         content: "";
         position: absolute;
-        background: url("/img/bg-header-about-us-tablet.png") no-repeat;
+        background: url("../img/bg-header-about-us-tablet.png") no-repeat;
         left: 0;
         top: -6px;
         width: 122px;
@@ -110,7 +110,7 @@
       &::after {
         content: "";
         position: absolute;
-        background: url("/img/bg-header-about-us-desktop.png") no-repeat;
+        background: url("../img/bg-header-about-us-desktop.png") no-repeat;
         left: 0;
         top: -6px;
         width: 168px;

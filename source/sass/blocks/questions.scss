@@ -1,6 +1,6 @@
 .questions {
   min-height: 621px;
-  background: url("/img/background-questions.jpg") no-repeat;
+  background: url("../img/background-questions.jpg") no-repeat;
   background-size: 100%;
 }
 
@@ -54,7 +54,7 @@
 @media (min-width: $tablet) {
   .questions {
     min-height: 679px;
-    background: url("/img/background-questions-tablet.jpg") no-repeat;
+    background: url("../img/background-questions-tablet.jpg") no-repeat;
   }
 
   .questions__wrapper {
@@ -93,7 +93,7 @@
 @media (min-width: $desktop) {
   .questions {
     min-height: 800px;
-    background: url("/img/background-questions-desktop.jpg") no-repeat;
+    background: url("../img/background-questions-desktop.jpg") no-repeat;
     background-size: 100%;
   }
 

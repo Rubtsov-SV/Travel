@@ -14,7 +14,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/img/advantages-mobile.png") no-repeat;
+      background: url("../img/advantages-mobile.png") no-repeat;
       left: -14px;
       width: 218px;
       height: 26px;
@@ -79,7 +79,7 @@
       margin-bottom: 47px;
 
       &::after {
-        background: url("/img/advantages-tablet.png") no-repeat;
+        background: url("../img/advantages-tablet.png") no-repeat;
         left: -69px;
         width: 336px;
         height: 40px;
@@ -147,7 +147,7 @@
       margin-bottom: 50px;
 
       &::after {
-        background: url("/img/advantages-desktop.png") no-repeat;
+        background: url("../img/advantages-desktop.png") no-repeat;
         left: -100px;
         width: 461px;
         height: 55px;
