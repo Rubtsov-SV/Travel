@@ -2605,8 +2605,7 @@ body {
     width: 56px;
     height: 56px;
     border: 0;
-    background-image: url("../img/button-video.png");
-    background-repeat: no-repeat;
+    background: url("../img/button-video.png") no-repeat;
     z-index: 2;
   }
   .hero__pagination {
