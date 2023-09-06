@@ -163,7 +163,7 @@
 @media (min-width: $desktop) {
   .feedback {
     padding-left: 120px;
-    padding-bottom: 148px;
+    padding-bottom: 124px;
   }
 
   .feedback__wrapper {
@@ -184,6 +184,8 @@
 
   .feedback__item {
     min-width: 790px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 
     h4 {
       font-size: 13px;
@@ -196,10 +198,20 @@
     }
   }
 
+  .feedback__block-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feedback__text-header {
+    margin-bottom: 12px;
+  }
+
   .feedback__photo {
     margin: 0;
     width: 258px;
-    height: 237px;
+    height: 253px;
     object-fit: cover;
   }
 
@@ -212,10 +224,12 @@
 
   .feedback-back {
     right: 162px;
+    top: -12px;
   }
 
   .feedback-next {
     right: 120px;
+    top: -12px;
   }
 
   .feedback__text-last {

@@ -84,7 +84,7 @@
     h2 {
       font-size: 25px;
       line-height: 25px;
-      margin-bottom: 26px;
+      margin-bottom: 21px;
 
       &::after {
         background: url("../img/photogallery-tablet.png") no-repeat;
@@ -115,6 +115,7 @@
   .photogallery__photo {
     width: 100%;
     min-height: 450px;
+    height: 450px;
   }
 
   .photogallery-back,
@@ -137,7 +138,7 @@
     h2 {
       font-size: 35px;
       line-height: 35px;
-      margin-bottom: 27px;
+      margin-bottom: 23px;
 
       &::after {
         background: url("../img/photogallery-desktop.png") no-repeat;

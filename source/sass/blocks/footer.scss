@@ -110,13 +110,15 @@
   .footer__list {
     flex-direction: row;
     height: 100%;
-    margin-top: 6px;
+    margin-top: 8px;
     max-width: 480px;
   }
 
   .footer__logo {
     margin-bottom: 35px;
+    padding: 0;
     padding-top: 5px;
+    padding-bottom: 4px;
 
     img {
       width: 118px;
@@ -132,6 +134,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .footer__box-phone {
+    display: none;
   }
 
   .footer__box-social {
@@ -162,6 +168,11 @@
     margin-left: -61px;
     margin-bottom: 10px;
     max-width: 650px;
+    gap: 18px;
+  }
+
+  .footer__box-phone {
+    display: block;
   }
 
   .footer__phone {
@@ -169,6 +180,7 @@
     font-size: 18px;
     font-weight: 600;
     margin-top: 19px;
+    margin-right: -3px;
 
     &:hover,
     :focus {
@@ -186,6 +198,7 @@
 
   .footer__logo {
     margin-bottom: 11px;
+    margin-left: -3px;
 
     img {
       width: 205px;

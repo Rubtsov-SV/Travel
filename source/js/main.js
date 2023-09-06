@@ -119,12 +119,12 @@ const swiperTours = new Swiper('.tours__wrapper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 12,
+      spaceBetween: 18,
     },
     1200: {
       slidesPerView: 3,
       slidesPerGroup: 1,
-      spaceBetween: 30,
+      spaceBetween: 28,
     },
   },
 });
@@ -164,11 +164,11 @@ const swiperFeedback = new Swiper('.feedback__slider', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.3,
       spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.65,
       slidesPerGroup: 1,
       spaceBetween: 30,
     },
@@ -185,7 +185,7 @@ function swiperCard() {
     if (!init) {
       init = true;
       swiperAdvantages = new Swiper('.advantages__slider', {
-        slidesPerView: 3.5,
+        slidesPerView: 3.58,
         centeredSlides: true,
         spaceBetween: 30,
         loop: true,
@@ -219,7 +219,7 @@ const swiperPhotogallary = new Swiper('.photogallery__slider', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2.8,
+      slidesPerView: 2.67,
       spaceBetween: 6,
     },
     1200: {
