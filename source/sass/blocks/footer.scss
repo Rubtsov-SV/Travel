@@ -50,6 +50,7 @@
 .footer__item {
   margin-bottom: 5px;
   width: 135px;
+  flex: 35%;
 }
 
 .footer__item-link {
@@ -172,6 +173,7 @@
     margin-bottom: 0;
     margin-right: 13px;
     width: max-content;
+    flex: auto;
 
     &:last-child {
       margin-right: 0;

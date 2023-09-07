@@ -45,6 +45,10 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
+
+    &:focus {
+      color: transparent;
+    }
   }
 }
 
@@ -57,6 +61,7 @@
     min-height: 679px;
     background-color: #10351a;
     background: url("../img/background-questions-tablet.jpg") no-repeat;
+    background-size: 100%;
   }
 
   .questions__wrapper {

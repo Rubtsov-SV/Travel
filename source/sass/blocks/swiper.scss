@@ -36,6 +36,12 @@
     width: 10px;
     height: 10px;
   }
+
+  .tours__list {
+    .swiper-slide-next {
+      // margin-right: 18px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {

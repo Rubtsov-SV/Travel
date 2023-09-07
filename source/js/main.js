@@ -274,7 +274,7 @@ const eventName = () => {
   let checkName;
   switch (name) {
     case 'name':
-      checkName = /^[а-яА-ЯёЁa-zA-Z0-9]+$/.test(value);
+      checkName = /^[а-яА-ЯёЁa-zA\-]+$/.test(value);
       break;
   }
   if (!checkName || checkName.lenght === 0) {

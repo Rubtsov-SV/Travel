@@ -1,6 +1,6 @@
 .tours {
   position: relative;
-  max-width: 384px;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 67px;
 
@@ -26,12 +26,12 @@
   &::after {
     position: absolute;
     content: "";
-    top: 217px;
-    right: -169px;
-    width: 365px;
+    top: 68px;
+    right: 0;
+    width: 176px;
     height: 595px;
-    background: url("../img/background-tours.png") no-repeat;
-    background-size: 365px 595px;
+    background: url("../img/background-tours-mobile.png") no-repeat;
+    background-size: 176px 595px;
     z-index: -1;
   }
 }
@@ -183,14 +183,18 @@
     }
 
     &::after {
-      top: 249px;
-      right: -150px;
+      top: -163px;
+      right: 0;
+      width: 294px;
+      height: 1364px;
+      background: url("../img/background-tours-tablet.png") no-repeat;
+      background-size: 294px 1364px;
     }
   }
 
   .tours__item {
     width: 324px;
-    margin-left: 2px;
+    // margin-left: 18px;
     margin-bottom: 55px;
   }
 

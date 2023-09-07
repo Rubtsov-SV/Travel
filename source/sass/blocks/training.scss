@@ -232,7 +232,7 @@
   }
 
   .training__card {
-    min-height: 380px;
+    min-height: 411px;
     padding: 20px 16px 9px;
     margin-bottom: 50px;
 
@@ -274,6 +274,10 @@
       line-height: 22px;
       width: 197px;
       margin-left: 19px;
+    }
+
+    .training__info-wrapper:nth-child(2) {
+      padding-right: 200px;
     }
 
     .training__info-wrapper:nth-child(3) {
@@ -328,8 +332,8 @@
       }
 
       &::before {
-        content: none;
-
+        top: -20px;
+        left: -345px;
       }
     }
 
@@ -394,6 +398,10 @@
   .training__info {
     column-gap: 0;
     padding-bottom: 79px;
+
+    .training__info-wrapper:nth-child(2) {
+      padding-right: 0;
+    }
 
     .training__info-wrapper:nth-child(3) {
       order: 1;
