@@ -55,7 +55,8 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
-    margin: 15px 0;
+    margin: 13px 0;
+    width: 111px;
   }
 
   p {
@@ -122,6 +123,12 @@
     border-radius: 50%;
     background-color: #0266c1;
   }
+
+  .training-icon {
+    width: 19px;
+    height: 19px;
+    margin-top: 5px;
+  }
 }
 
 .training__card-box {
@@ -130,6 +137,7 @@
 
   a {
     margin-top: 19px;
+    margin-right: 11px;
   }
 }
 
@@ -340,7 +348,7 @@
 
 @media (min-width: $desktop) {
   .training {
-    max-width: 1680px;
+    max-width: 1440px;
 
     h2 {
       font-size: 35px;
@@ -386,6 +394,37 @@
   .training__info {
     column-gap: 0;
     padding-bottom: 79px;
+
+    .training__info-wrapper:nth-child(3) {
+      order: 1;
+    }
+    .training__info-wrapper:nth-child(4) {
+      order: 2;
+    }
+  }
+
+  .training__prev-hidden {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 42px;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+    cursor: pointer;
+  }
+
+  .training__next-hidden {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+    cursor: pointer;
   }
 
   .training__card {
@@ -404,6 +443,12 @@
   .training__icon {
     width: 24px;
     height: 24px;
+  }
+
+  .training__card-box {
+    a {
+      margin-right: 0;
+    }
   }
 
 

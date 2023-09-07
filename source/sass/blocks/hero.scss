@@ -9,6 +9,7 @@
   bottom: 68px;
   height: 568px;
   width: 100%;
+  background-color: #6fabd1;
   background: url("../img/background-header.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
@@ -56,7 +57,8 @@
 
   .hero__background {
     bottom: 66px;
-    background: url("../img/background-header-tablet.jpg") no-repeat;
+    background-color: #6fabd1;
+    background: url("../img/background-header-tablet.jpg") no-repeat cover;
     min-height: 1024px;
   }
 
@@ -137,16 +139,19 @@
 @media (min-width: $desktop) {
   .hero {
     padding-bottom: 92px;
+    padding-top: 81px;
   }
 
   .hero__background {
-    bottom: 73px;
+    bottom: 74px;
     text-align: left;
     min-height: 800px;
+    background-color: #6fabd1;
+    background: url("../img/background-header.jpg") no-repeat cover;
   }
 
   .hero__wrapper {
-    max-width: 1680px;
+    max-width: 1440px;
   }
 
   .hero__header {

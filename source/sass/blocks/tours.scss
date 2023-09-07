@@ -252,7 +252,7 @@
 @media (min-width: $desktop) {
   .tours {
     padding-top: 43px;
-    width: 1680px;
+    position: relative;;
 
     h2 {
       font-size: 35px;
@@ -282,6 +282,7 @@
 
   .tours__wrapper {
     position: relative;
+    width: 1440px;
   }
 
   .tours__card {
@@ -296,6 +297,30 @@
       margin-bottom: 38px;
       width: 250px;
     }
+  }
+
+  .tours__prev-hidden {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 160px;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+    cursor: pointer;
+  }
+
+  .tours__next-hidden {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 120px;
+    z-index: 2;
+    width: 37px;
+    height: 35px;
+    background-color: #0266c1;
+    cursor: pointer;
   }
 
   .tours__complexity,

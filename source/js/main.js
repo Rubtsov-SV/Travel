@@ -303,3 +303,42 @@ form.addEventListener('submit', (event) => {
     return true;
   }
 });
+
+// Кнопки для слайдеров 1200px
+
+const buttonToursPrev = document.querySelector('.tours__prev-hidden');
+const buttonToursNext = document.querySelector('.tours__next-hidden');
+const buttonTrainingPrev = document.querySelector('.training__prev-hidden');
+const buttonTrainingNext = document.querySelector('.training__next-hidden');
+const buttonPhotoPrev = document.querySelector('.photogallery__prev-hidden');
+const buttonPhotoNext = document.querySelector('.photogallery__next-hidden');
+
+let inite = false;
+function sliderButton() {
+  if (window.innerWidth >= 1200) {
+    if (!inite) {
+      init = true;
+      buttonToursPrev.style.display = 'block';
+      buttonToursNext.style.display = 'block';
+      buttonTrainingPrev.style.display = 'block';
+      buttonTrainingNext.style.display = 'block';
+      buttonPhotoPrev.style.display = 'block';
+      buttonPhotoNext.style.display = 'block';
+    }
+  } else {
+    buttonToursPrev.style.display = 'none';
+    buttonToursNext.style.display = 'none';
+    buttonTrainingPrev.style.display = 'none';
+    buttonTrainingNext.style.display = 'none';
+    buttonPhotoPrev.style.display = 'none';
+    buttonPhotoNext.style.display = 'none';
+    init = false;
+  }
+}
+sliderButton();
+window.addEventListener('resize', () => {
+  sliderButton();
+});
+window.addEventListener('load', () => {
+  sliderButton();
+});

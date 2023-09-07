@@ -48,10 +48,6 @@
   }
 }
 
-.feedback__photo {
-  margin: 0 auto;
-}
-
 .feedback__text {
   font-size: 12px;
   line-height: 18px;
@@ -62,6 +58,7 @@
 .feedback__text-last {
   margin: 0;
   margin-top: 9px;
+  margin-bottom: 16px;
 }
 
 .feedback-next {
@@ -186,6 +183,7 @@
     min-width: 790px;
     padding-top: 17px;
     padding-bottom: 17px;
+    max-width: 790px;
 
     h4 {
       font-size: 13px;

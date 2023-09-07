@@ -22,13 +22,34 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   max-width: 650px;
+  column-gap: 18px;
+
+  .footer__item:nth-child(2) {
+    order: 3;
+  }
+
+  .footer__item:nth-child(3) {
+    order: 5;
+  }
+
+  .footer__item:nth-child(4) {
+    order: 2;
+  }
+
+  .footer__item:nth-child(5) {
+    order: 4;
+  }
+
+  .footer__item:nth-child(6) {
+    order: 6;
+  }
 }
 
 .footer__item {
   margin-bottom: 5px;
-  width: 145px;
+  width: 135px;
 }
 
 .footer__item-link {
@@ -112,6 +133,27 @@
     height: 100%;
     margin-top: 8px;
     max-width: 480px;
+    column-gap: 0;
+
+    .footer__item:nth-child(2) {
+      order: 0;
+    }
+
+    .footer__item:nth-child(3) {
+      order: 0;
+    }
+
+    .footer__item:nth-child(4) {
+      order: 0;
+    }
+
+    .footer__item:nth-child(5) {
+      order: 0;
+    }
+
+    .footer__item:nth-child(6) {
+      order: 0;
+    }
   }
 
   .footer__logo {
