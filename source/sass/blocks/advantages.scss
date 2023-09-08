@@ -210,6 +210,29 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .advantages-back {
@@ -221,6 +244,29 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .advantages__button-icon {

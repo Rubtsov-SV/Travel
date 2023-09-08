@@ -88,6 +88,13 @@
   }
 }
 
+.contacts__phone,
+.contacts__mail {
+  &:focus {
+    outline: none;
+  }
+}
+
 
 @media (min-width: $tablet) {
   .contacts {

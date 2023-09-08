@@ -138,6 +138,14 @@
   a {
     margin-top: 19px;
     margin-right: 11px;
+
+    &:focus {
+      outline: none;
+
+      .training__icon {
+        --color-2: #2d383f;
+      }
+    }
   }
 }
 
@@ -150,6 +158,29 @@
   height: 35px;
   background-color: #0266c1;
   cursor: pointer;
+
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border: 1px solid #1c3374;
+    outline: none;
+
+    svg {
+      fill: #1c3374;
+    }
+  }
+
+  &:active {
+    background-color: #1c3374;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
 }
 
 .training-back {
@@ -161,6 +192,29 @@
   height: 35px;
   background-color: #0266c1;
   cursor: pointer;
+
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border: 1px solid #1c3374;
+    outline: none;
+
+    svg {
+      fill: #1c3374;
+    }
+  }
+
+  &:active {
+    background-color: #1c3374;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
 }
 
 .training__button-icon {
@@ -175,7 +229,7 @@
   --color-3: #2d383f;
 
   &:hover,
-  :focus {
+  &:focus {
     --color-2: #2d383f;
   }
 
@@ -421,6 +475,29 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .training__next-hidden {
@@ -433,6 +510,29 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .training__card {

@@ -7,12 +7,17 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  user-select: none;
+  display: block;
+  text-align: center;
+  padding-top: 16px;
 
   &:focus,
   &:hover {
     border: 1px solid #1c3374;
     color: #1c3374;
     background-color: #ffffff;
+    outline: 0;
   }
 
   &:active {

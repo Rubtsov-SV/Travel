@@ -41,19 +41,33 @@
   padding-bottom: 18px;
   padding-left: 15px;
 
+  &:hover {
+    border: 1px solid #0266c1;
+
+    &::placeholder {
+      color: #0266c1;
+    }
+  }
+
+  &:focus,
+  :active {
+    border: 1px solid #1C3374;
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
   &::placeholder {
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
-
-    &:focus {
-      color: transparent;
-    }
   }
 }
 
 .questions__button {
   width: 100%;
+  padding-top: 3px;
 }
 
 @media (min-width: $tablet) {

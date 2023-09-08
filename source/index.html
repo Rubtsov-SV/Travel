@@ -193,19 +193,17 @@
     </symbol>
 
     <symbol id="next-tour" width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 13L7 7L0.999999 1" stroke="#2D383F" stroke-width="2" />
+      <path d="M1 13L7 7L0.999999 1" stroke-width="2" />
     </symbol>
 
-    <symbol id="back" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="back" width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M0.646446 4.85355C0.451184 4.65829 0.451184 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53553 0.964466C4.7308 1.15973 4.7308 1.47631 4.53553 1.67157L1.70711 4.5L4.53553 7.32843C4.7308 7.52369 4.7308 7.84027 4.53553 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM14 5H1V4H14V5Z"
-        fill="white" />
+        d="M0.646446 4.85355C0.451184 4.65829 0.451184 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53553 0.964466C4.7308 1.15973 4.7308 1.47631 4.53553 1.67157L1.70711 4.5L4.53553 7.32843C4.7308 7.52369 4.7308 7.84027 4.53553 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM14 5H1V4H14V5Z" />
     </symbol>
 
-    <symbol id="next" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="next" width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
-        fill="white" />
+        d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z" />
     </symbol>
 
     <symbol id="tur" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -337,34 +335,22 @@
           </a>
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__item-link" href="#">Туры</a>
+              <a class="header__item-link banner-scroll-tours" href="#tours">Туры</a>
             </li>
             <li class="header__item">
-              <a class="header__item-link" href="#">Обучения</a>
+              <a class="header__item-link banner-scroll-training" href="#training">Обучения</a>
             </li>
             <li class="header__item">
-              <a class="header__item-link" href="#">О нас</a>
+              <a class="header__item-link banner-scroll-about-us" href="#about-us">О нас</a>
             </li>
             <li class="header__item">
-              <a class="header__item-link" href="#">Отзывы</a>
+              <a class="header__item-link banner-scroll-feedback" href="#feedback">Отзывы</a>
             </li>
             <li class="header__item">
-              <a class="header__item-link" href="#">Фотографии</a>
+              <a class="header__item-link banner-scroll-photogallery" href="#photogallery">Фотографии</a>
             </li>
             <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
+              <a class="header__item-link banner-scroll-contacts" href="#contacts">Контакты</a>
             </li>
           </ul>
           <div>
@@ -373,19 +359,21 @@
         </div>
       </div>
     </header>
+    </header>
+
     <main>
 
       <section class="hero">
-        <div class="hero__background"></div>
-        <div class="hero__wrapper container">
+        <div class="hero__wrapper">
+          <div class="hero__background"></div>
           <div class="swiper hero__swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="hero__item">
+                <div class="hero__item container">
                   <h1 class="hero__header">Захватывающие вершины Кавказа</h1>
                   <p class="hero__text">В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и
                     совершите восход на вершину горы Чегет.</p>
-                  <button class="hero__button button">Смотреть тур</button>
+                  <a href="#" class="hero__button button">Смотреть тур</a>
                   <div class="hero__media">
                     <div class="hero__video-player" id="video-player">
                       <iframe class="hero__video" id="video" width="560" height="315"
@@ -427,12 +415,12 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="hero__item">
+                <div class="hero__item container">
                   <h1 class="hero__header">Невероятная природа Камчатки</h1>
                   <p class="hero__text">Незабываемое приключение, во время которого вы отправитесь в путешествие по
                     одному
                     из самых нетронутых уголков дикой природы в мире.</p>
-                  <button class="hero__button button">Смотреть тур</button>
+                  <a href="#" class="hero__button button">Смотреть тур</a>
                   <div class="hero__media hero__media-picture">
                     <picture>
                       <source media="(min-width:1200px)"
@@ -464,11 +452,11 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="hero__item">
+                <div class="hero__item container">
                   <h1 class="hero__header">Магические пейзажи Алтайского Края</h1>
                   <p class="hero__text">Алтайский трекинг-тур – это захватывающее приключение с посещением магических и
                     захватывающих дух ландшафтов Алтайских гор.</p>
-                  <button class="hero__button button">Смотреть тур</button>
+                  <a href="#" class="hero__button button">Смотреть тур</a>
                   <div class="hero__media hero__media-music">
                     <iframe style="border:none;width:340px;height:220px;" width="340" height="220"
                       src="https://music.yandex.ru/iframe/#album/25474374">Слушайте <a
@@ -495,7 +483,7 @@
           </div>
       </section>
 
-      <section class="tours">
+      <section class="tours" id="tours">
         <div class="swiper tours__wrapper container">
           <h2>Ближайшие туры</h2>
           <div class="swiper-wrapper tours__list">
@@ -649,23 +637,23 @@
 
           </div>
 
-          <div class="s-button-next tours-next">
+          <div class="s-button-next tours-next" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#next"></use>
             </svg>
           </div>
-          <div class="s-button-prev tours-back">
+          <div class="s-button-prev tours-back" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#back"></use>
             </svg>
           </div>
 
-          <div class="tours__next-hidden">
+          <div class="tours__next-hidden" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#next"></use>
             </svg>
           </div>
-          <div class="tours__prev-hidden">
+          <div class="tours__prev-hidden" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#back"></use>
             </svg>
@@ -690,7 +678,7 @@
         </div>
       </section>
 
-      <section class="training container">
+      <section class="training container" id="training">
         <div class="training__wrapper">
           <h2>Обучение</h2>
           <p class="training__text">Обучение проводится квалифицированными специалистами, за плечами которых десятки
@@ -771,23 +759,23 @@
                   <p>Строгий и внимательный инструктор, веселый и общительный человек. Любит природу.</p>
                 </div>
               </div>
-              <div class="st-button-next training-next">
+              <div class="st-button-next training-next" tabindex="0">
                 <svg class="training__button-icon" width="14" height="9">
                   <use xlink:href="#next"></use>
                 </svg>
               </div>
-              <div class="st-button-prev training-back">
+              <div class="st-button-prev training-back" tabindex="0">
                 <svg class="training__button-icon" width="14" height="9">
                   <use xlink:href="#back"></use>
                 </svg>
               </div>
 
-              <div class="training__next-hidden">
+              <div class="training__next-hidden" tabindex="0">
                 <svg class="tours__button-icon" width="14" height="9">
                   <use xlink:href="#next"></use>
                 </svg>
               </div>
-              <div class="training__prev-hidden">
+              <div class="training__prev-hidden" tabindex="0">
                 <svg class="tours__button-icon" width="14" height="9">
                   <use xlink:href="#back"></use>
                 </svg>
@@ -827,7 +815,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="about-us__wrapper">
           <picture>
             <source media="(min-width:1200px)"
@@ -859,7 +847,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="feedback__wrapper">
           <h2>Отзывы</h2>
           <div class="swiper feedback__slider">
@@ -970,12 +958,12 @@
               </div>
             </div>
           </div>
-          <div class="sf-button-next feedback-next">
+          <div class="sf-button-next feedback-next" tabindex="0">
             <svg class="feedback__button-icon" width="14" height="9">
               <use xlink:href="#next"></use>
             </svg>
           </div>
-          <div class="sf-button-prev feedback-back">
+          <div class="sf-button-prev feedback-back" tabindex="0">
             <svg class="feedback__button-icon" width="14" height="9">
               <use xlink:href="#back"></use>
             </svg>
@@ -1090,12 +1078,12 @@
                 </div>
               </div>
             </div>
-            <div class="sa-button-next advantages-next">
+            <div class="sa-button-next advantages-next" tabindex="0">
               <svg class="advantages__button-icon" width="14" height="9">
                 <use xlink:href="#next"></use>
               </svg>
             </div>
-            <div class="sa-button-prev advantages-back">
+            <div class="sa-button-prev advantages-back" tabindex="0">
               <svg class="advantages__button-icon" width="14" height="9">
                 <use xlink:href="#back"></use>
               </svg>
@@ -1104,7 +1092,7 @@
         </div>
       </section>
 
-      <section class="photogallery">
+      <section class="photogallery" id="photogallery">
         <div class="photogallery__wrapper">
           <div class="photogallery__box container">
             <h2>Фотогалерея</h2>
@@ -1171,23 +1159,23 @@
               </div>
             </div>
           </div>
-          <div class="sp-button-next photogallery-next">
+          <div class="sp-button-next photogallery-next" tabindex="0">
             <svg class="photogallery__button-icon" width="14" height="9">
               <use xlink:href="#next"></use>
             </svg>
           </div>
-          <div class="sp-button-prev photogallery-back">
+          <div class="sp-button-prev photogallery-back" tabindex="0">
             <svg class="photogallery__button-icon" width="14" height="9">
               <use xlink:href="#back"></use>
             </svg>
           </div>
 
-          <div class="photogallery__next-hidden">
+          <div class="photogallery__next-hidden" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#next"></use>
             </svg>
           </div>
-          <div class="photogallery__prev-hidden">
+          <div class="photogallery__prev-hidden" tabindex="0">
             <svg class="tours__button-icon" width="14" height="9">
               <use xlink:href="#back"></use>
             </svg>
@@ -1217,7 +1205,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__wrapper container">
           <h2>Контакты</h2>
           <p>Свяжитесь с нами любым удобным для&nbsp;вас способом или приходите к нам в&nbsp;гости. Мы будем рады
@@ -1291,22 +1279,22 @@
           </a>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Туры</a>
+              <a class="footer__item-link banner-scroll-tours" href="#tours">Туры</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Обучение</a>
+              <a class="footer__item-link banner-scroll-training" href="#training">Обучение</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">О нас</a>
+              <a class="footer__item-link banner-scroll-about-us" href="#about-us">О нас</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Отзывы</a>
+              <a class="footer__item-link banner-scroll-feedback" href="#feedback">Отзывы</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Фотографии</a>
+              <a class="footer__item-link banner-scroll-photogallery" href="#photogallery">Фотографии</a>
             </li>
             <li class="footer__item">
-              <a class="footer__item-link" href="#">Контакты</a>
+              <a class="footer__item-link banner-scroll-contacts" href="#contacts">Контакты</a>
             </li>
           </ul>
           <div class="footer__box-phone">

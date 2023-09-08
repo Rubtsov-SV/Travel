@@ -84,10 +84,102 @@ button.addEventListener('click', ()=> {
   }
 });
 
+// Скрол
+const bannerScrollTuors = document.querySelectorAll('.banner-scroll-tours');
+const tours = document.querySelector('#tours');
+
+if (bannerScrollTuors) {
+  for (const bannerScrollTuor of bannerScrollTuors) {
+    bannerScrollTuor.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      tours.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
+const bannerScrollTrainings = document.querySelectorAll('.banner-scroll-training');
+const training = document.querySelector('#training');
+
+if (bannerScrollTrainings) {
+  for (const bannerScrollTraining of bannerScrollTrainings) {
+    bannerScrollTraining.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      training.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
+const bannerScrollAboutUss = document.querySelectorAll('.banner-scroll-about-us');
+const aboutUs = document.querySelector('#about-us');
+
+if (bannerScrollAboutUss) {
+  for (const bannerScrollAboutUs of bannerScrollAboutUss) {
+    bannerScrollAboutUs.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      aboutUs.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
+const bannerScrollFeedbacks = document.querySelectorAll('.banner-scroll-feedback');
+const feedback = document.querySelector('#feedback');
+
+if (bannerScrollFeedbacks) {
+  for (const bannerScrollFeedback of bannerScrollFeedbacks) {
+    bannerScrollFeedback.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      feedback.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
+const bannerScrollPhotogallerys = document.querySelectorAll('.banner-scroll-photogallery');
+const photogallery = document.querySelector('#photogallery');
+
+if (bannerScrollPhotogallerys) {
+  for (const bannerScrollPhotogallery of bannerScrollPhotogallerys) {
+    bannerScrollPhotogallery.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      photogallery.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
+const bannerScrollContactss = document.querySelectorAll('.banner-scroll-contacts');
+const contacts = document.querySelector('#contacts');
+
+if (bannerScrollContactss) {
+  for (const bannerScrollContacts of bannerScrollContactss) {
+    bannerScrollContacts.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      contacts.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+}
+
 // Слайдер Hero
 
 const swiperHero = new Swiper('.hero__swiper', {
   slidesPerView: 1,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

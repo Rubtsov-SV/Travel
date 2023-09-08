@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  padding-top: 40px;
   padding-bottom: 65px;
 }
 
@@ -23,6 +22,7 @@
   margin: 0 auto;
   margin-bottom: 13px;
   max-width: 670px;
+  padding-top: 40px;
 }
 
 .hero__text {
@@ -51,7 +51,6 @@
 
 @media (min-width: $tablet) {
   .hero {
-    padding-top: 70px;
     padding-bottom: 0;
   }
 
@@ -66,6 +65,7 @@
     font-size: 56px;
     line-height: 56px;
     margin-top: 5px;
+    padding-top: 70px;
   }
 
   .hero__text {
@@ -129,6 +129,16 @@
     border: 0;
     background: url("../img/button-video.png") no-repeat;
     z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+      background: url("../img/button-video-hover.png") no-repeat;
+    }
+
+    &:focus {
+      background: url("../img/button-video-hover.png") no-repeat;
+      outline: none;
+    }
   }
 
   .hero__pagination {
@@ -139,7 +149,6 @@
 @media (min-width: $desktop) {
   .hero {
     padding-bottom: 92px;
-    padding-top: 81px;
   }
 
   .hero__background {
@@ -148,10 +157,6 @@
     min-height: 800px;
     background-color: #6fabd1;
     background: url("../img/background-header.jpg") no-repeat cover;
-  }
-
-  .hero__wrapper {
-    max-width: 1440px;
   }
 
   .hero__header {
@@ -163,6 +168,7 @@
     margin: 0;
     margin-bottom: 24px;
     margin-top: 0;
+    padding-top: 81px;
   }
 
   .hero__text {
@@ -173,6 +179,7 @@
 
   .hero__item {
     position: relative;
+    max-width: 1440px;
     width: 100%;
   }
 
@@ -180,13 +187,12 @@
     position: absolute;
     width: 482px;
     height: 317px;
-    top: 120px;
-    right: 0;
+    top: 192px;
+    right: 120px;
   }
 
   .hero__media-picture {
-    top: 21px;
-    right: -36px;
+    top: 120px;
   }
 
   .hero__media-music {

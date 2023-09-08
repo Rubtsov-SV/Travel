@@ -131,6 +131,36 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+
+  svg {
+    stroke: #2d383f;
+  }
+
+  &:hover {
+    color: #1c3374;
+
+    svg {
+      stroke: #1c3374;
+    }
+  }
+
+  &:focus {
+    color: #1c3374;
+    outline: 0;
+
+    svg {
+      stroke: #1c3374;
+    }
+  }
+
+  &:active {
+    color: #0266c1;
+
+
+    svg {
+      stroke: #0266c1;
+    }
+  }
 }
 
 .tours-next {
@@ -142,6 +172,25 @@
   height: 35px;
   background-color: #0266c1;
   cursor: pointer;
+
+  &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
 }
 
 .tours-back {
@@ -153,6 +202,25 @@
   height: 35px;
   background-color: #0266c1;
   cursor: pointer;
+
+  &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
 }
 
 .tours__button-icon {
@@ -313,6 +381,30 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .tours__next-hidden {
@@ -325,6 +417,29 @@
     height: 35px;
     background-color: #0266c1;
     cursor: pointer;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #1c3374;
+      outline: none;
+
+      svg {
+        fill: #1c3374;
+      }
+    }
+
+    &:active {
+      background-color: #1c3374;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
   }
 
   .tours__complexity,
