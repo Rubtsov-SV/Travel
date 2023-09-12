@@ -66,3 +66,7 @@
     top: 382px;
   }
 }
+
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: 100%;
+}

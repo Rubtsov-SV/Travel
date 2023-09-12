@@ -40,11 +40,13 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 412px;
+  min-height: 412px;
+  height: 100%;
   margin-bottom: 27px;
 
   img {
-    height: 412px;
+    height: 100%;
+    object-fit: cover;
   }
 }
 

@@ -27,6 +27,10 @@
   margin-bottom: 32px;
 }
 
+.training__list {
+  margin-bottom: 36px;
+}
+
 .training__item {
   position: relative;
   margin: 0 auto;
@@ -48,7 +52,7 @@
 .training__card {
   min-height: 385px;
   padding: 20px 20px 20px 20px;
-  margin-bottom: 36px;
+  // margin-bottom: 36px;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   h4 {
@@ -94,7 +98,7 @@
     left: 8px;
     position: absolute;
     width: 1px;
-    height: 187px;
+    height: 92%;
     background-color: rgba(2, 102, 193, 0.1);
   }
 }
@@ -265,6 +269,10 @@
     margin-bottom: 47px;
   }
 
+  .training__list {
+    margin-bottom: 50px;
+  }
+
   .training__item {
     img {
       width: 176px;
@@ -288,7 +296,7 @@
   .training__card {
     min-height: 411px;
     padding: 20px 16px 9px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     h4 {
       margin: 15px 0;
@@ -331,7 +339,7 @@
     }
 
     .training__info-wrapper:nth-child(2) {
-      padding-right: 200px;
+      padding-right: 75px;
     }
 
     .training__info-wrapper:nth-child(3) {
@@ -368,9 +376,9 @@
 
     &:nth-child(2) {
       &::before {
-        height: 56px;
+        height: 100%;
         width: 1px;
-        top: 52px;
+        top: 65px;
         left: 10px;
       }
 
@@ -428,6 +436,10 @@
     width: 820px;
     font-size: 16px;
     margin-bottom: 32px;
+  }
+
+  .training__list {
+    margin-bottom: 53px;
   }
 
   .training__item {
@@ -537,7 +549,7 @@
 
   .training__card {
     padding: 20px 20px 9px;
-    margin-bottom: 53px;
+    // margin-bottom: 53px;
 
     h4 {
       width: 111px;
@@ -562,7 +574,8 @@
 
   .training__info-wrapper {
     &::after {
-      top: 74px;
+      top: revert;
+      bottom: -26px;
       left: 2px;
     }
 
@@ -571,7 +584,8 @@
       position: absolute;
       width: 700px;
       height: 1px;
-      top: 78px;
+      top: revert;
+      bottom: -20px;
       left: -200px;
       background-color: rgba(2, 102, 193, 0.1);
     }
@@ -586,32 +600,38 @@
       &::before {
         width: 500px;
         height: 1px;
-        top: 78px;
+        top: revert;
+        bottom: -20px;
         left: 10px;
       }
 
       &::after {
+        top: revert;
+        bottom: -26px;
         left: 2px;
       }
     }
 
     &:nth-child(3) {
       &::after {
-        top: 74px;
+        top: revert;
+        bottom: -26px;
         left: 2px;
       }
 
       &::before {
         width: 500px;
         height: 1px;
-        top: 78px;
+        top: revert;
+        bottom: -20px;
         left: 10px;
       }
     }
 
     &:nth-child(4) {
       &::after {
-        top: 74px;
+        top: revert;
+        bottom: -41px;
         left: 4px;
       }
 
@@ -619,7 +639,8 @@
         content: "";
         width: 500px;
         height: 1px;
-        top: 78px;
+        top: revert;
+        bottom: -35px;
         left: 10px;
       }
     }

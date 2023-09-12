@@ -2905,6 +2905,10 @@ body {
     top: 382px;
   }
 }
+.swiper-autoheight, .swiper-autoheight .swiper-slide {
+  height: 100%;
+}
+
 .button {
   width: 62%;
   height: 52px;
@@ -2988,11 +2992,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 412px;
+  min-height: 412px;
+  height: 100%;
   margin-bottom: 27px;
 }
 .tours__item img {
-  height: 412px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tours__card {
@@ -3394,6 +3401,10 @@ body {
   margin-bottom: 32px;
 }
 
+.training__list {
+  margin-bottom: 36px;
+}
+
 .training__item {
   position: relative;
   margin: 0 auto;
@@ -3413,7 +3424,6 @@ body {
 .training__card {
   min-height: 385px;
   padding: 20px 20px 20px 20px;
-  margin-bottom: 36px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
@@ -3455,7 +3465,7 @@ body {
   left: 8px;
   position: absolute;
   width: 1px;
-  height: 187px;
+  height: 92%;
   background-color: rgba(2, 102, 193, 0.1);
 }
 
@@ -3604,6 +3614,9 @@ body {
     line-height: 24px;
     margin-bottom: 47px;
   }
+  .training__list {
+    margin-bottom: 50px;
+  }
   .training__item img {
     width: 176px;
     height: 212px;
@@ -3623,7 +3636,6 @@ body {
   .training__card {
     min-height: 411px;
     padding: 20px 16px 9px;
-    margin-bottom: 50px;
   }
   .training__card h4 {
     margin: 15px 0;
@@ -3665,7 +3677,7 @@ body {
     margin-left: 19px;
   }
   .training__info .training__info-wrapper:nth-child(2) {
-    padding-right: 200px;
+    padding-right: 75px;
   }
   .training__info .training__info-wrapper:nth-child(3) {
     -webkit-box-ordinal-group: 3;
@@ -3699,9 +3711,9 @@ body {
     margin-top: 9px;
   }
   .training__info-wrapper:nth-child(2)::before {
-    height: 56px;
+    height: 100%;
     width: 1px;
-    top: 52px;
+    top: 65px;
     left: 10px;
   }
   .training__info-wrapper:nth-child(2)::after {
@@ -3744,6 +3756,9 @@ body {
     width: 820px;
     font-size: 16px;
     margin-bottom: 32px;
+  }
+  .training__list {
+    margin-bottom: 53px;
   }
   .training__item h3 {
     font-size: 21px;
@@ -3834,7 +3849,6 @@ body {
   }
   .training__card {
     padding: 20px 20px 9px;
-    margin-bottom: 53px;
   }
   .training__card h4 {
     width: 111px;
@@ -3850,7 +3864,8 @@ body {
     margin-right: 0;
   }
   .training__info-wrapper::after {
-    top: 74px;
+    top: revert;
+    bottom: -26px;
     left: 2px;
   }
   .training__info-wrapper::before {
@@ -3858,7 +3873,8 @@ body {
     position: absolute;
     width: 700px;
     height: 1px;
-    top: 78px;
+    top: revert;
+    bottom: -20px;
     left: -200px;
     background-color: rgba(2, 102, 193, 0.1);
   }
@@ -3870,31 +3886,38 @@ body {
   .training__info-wrapper:nth-child(2)::before {
     width: 500px;
     height: 1px;
-    top: 78px;
+    top: revert;
+    bottom: -20px;
     left: 10px;
   }
   .training__info-wrapper:nth-child(2)::after {
+    top: revert;
+    bottom: -26px;
     left: 2px;
   }
   .training__info-wrapper:nth-child(3)::after {
-    top: 74px;
+    top: revert;
+    bottom: -26px;
     left: 2px;
   }
   .training__info-wrapper:nth-child(3)::before {
     width: 500px;
     height: 1px;
-    top: 78px;
+    top: revert;
+    bottom: -20px;
     left: 10px;
   }
   .training__info-wrapper:nth-child(4)::after {
-    top: 74px;
+    top: revert;
+    bottom: -41px;
     left: 4px;
   }
   .training__info-wrapper:nth-child(4)::before {
     content: "";
     width: 500px;
     height: 1px;
-    top: 78px;
+    top: revert;
+    bottom: -35px;
     left: 10px;
   }
 }
@@ -4220,6 +4243,7 @@ body {
     padding-top: 17px;
     padding-bottom: 17px;
     max-width: 790px;
+    height: auto;
   }
   .feedback__item h4 {
     font-size: 13px;
@@ -4271,7 +4295,7 @@ body {
   }
 }
 .advantages__wrapper {
-  margin-bottom: 4px;
+  margin-bottom: 60px;
 }
 .advantages__wrapper h2 {
   position: relative;
@@ -4379,7 +4403,7 @@ body {
   }
   .advantages__item {
     width: 47.7%;
-    min-height: 270px;
+    min-height: 290px;
     padding: 20px;
     padding-bottom: 27px;
     margin-bottom: 30px;
@@ -4387,13 +4411,10 @@ body {
         -ms-flex-pack: start;
             justify-content: start;
   }
-  .advantages__item:nth-child(1) {
+  .advantages__item:nth-child(odd) {
     margin-right: 30px;
   }
-  .advantages__item:nth-child(3) {
-    margin-right: 30px;
-  }
-  .advantages__item:nth-child(5) {
+  .advantages__item:last-child {
     margin-right: 0;
   }
   .advantages__icon {
@@ -4413,7 +4434,7 @@ body {
   .advantages {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 125px;
+    padding-bottom: 55px;
   }
   .advantages__wrapper {
     margin-bottom: 0;
@@ -4430,20 +4451,23 @@ body {
     height: 55px;
   }
   .advantages__list {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .advantages__item {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     width: 380px;
-    height: 360px;
+    height: auto;
+    margin-bottom: 100px;
   }
   .advantages__item .advantages__header h4 {
     width: -webkit-max-content;
@@ -4461,7 +4485,7 @@ body {
   }
   .advantages__slider {
     position: relative;
-    height: 420px;
+    height: 100%;
   }
   .advantages__icon {
     width: 54px;
@@ -4473,7 +4497,7 @@ body {
   }
   .advantages-next {
     position: absolute;
-    top: 380px;
+    bottom: 14px;
     right: 46.5%;
     left: 50.2%;
     z-index: 2;
@@ -4501,7 +4525,7 @@ body {
   }
   .advantages-back {
     position: absolute;
-    top: 380px;
+    bottom: 14px;
     right: 50.1%;
     z-index: 2;
     width: 37px;
@@ -4534,7 +4558,8 @@ body {
 }
 @media (min-width: 1440px) {
   .advantages__item {
-    height: 329px;
+    min-height: 329px;
+    height: auto;
   }
 }
 .photogallery__wrapper {
@@ -5058,12 +5083,21 @@ body {
   line-height: 14px;
   margin: 0;
   margin-bottom: 8px;
+  width: 125px;
 }
 .contacts__info dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   margin: 0;
+  width: 145px;
 }
 .contacts__info .contacts__address {
   width: 178px;
@@ -5198,7 +5232,7 @@ body {
   }
   .contacts__map {
     position: absolute;
-    bottom: -8px;
+    top: 144px;
     right: 121px;
   }
   .contacts__map iframe {

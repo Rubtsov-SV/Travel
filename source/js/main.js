@@ -227,6 +227,7 @@ const swiperTours = new Swiper('.tours__wrapper', {
 const swiperTraining = new Swiper('.training__item', {
   slidesPerView: 1,
   spaceBetween: 30,
+  autoHeight: true,
   navigation: {
     nextEl: '.st-button-next',
     prevEl: '.st-button-prev',
@@ -245,7 +246,7 @@ const swiperTraining = new Swiper('.training__item', {
 });
 
 
-// Слайдер отызвы
+// Слайдер отзывы
 
 const swiperFeedback = new Swiper('.feedback__slider', {
   slidesPerView: 1,
@@ -269,6 +270,8 @@ const swiperFeedback = new Swiper('.feedback__slider', {
 
 
 // Слайдер преимущества
+const advantagesNext = document.querySelector('.advantages-next');
+const advantagesBack = document.querySelector('.advantages-back');
 
 let init = false;
 let swiperAdvantages;
@@ -276,6 +279,8 @@ function swiperCard() {
   if (window.innerWidth >= 1200) {
     if (!init) {
       init = true;
+      advantagesNext.style.display = 'block';
+      advantagesBack.style.display = 'block';
       swiperAdvantages = new Swiper('.advantages__slider', {
         slidesPerView: 3.58,
         centeredSlides: true,
@@ -288,6 +293,8 @@ function swiperCard() {
       });
     }
   } else if (init) {
+    advantagesNext.style.display = 'none';
+    advantagesBack.style.display = 'none';
     swiperAdvantages.destroy();
     init = false;
   }
@@ -434,3 +441,11 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', () => {
   sliderButton();
 });
+
+
+const itemItem = document.querySelector('.tours__item');
+const itemCard = document.querySelector('.tours__card');
+
+const heaghtItem = itemCard.offsetHeight;
+
+itemItem.style.height = heaghtItem + 'px';
