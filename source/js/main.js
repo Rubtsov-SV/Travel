@@ -49,41 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // используйте .closest(el)
 
-// Бургер
-
-const button = document.querySelector('.header__burger');
-
-const menu = document.querySelector('.header__list');
-const phone = document.querySelector('.header__phone');
-const logo = document.querySelector('#logo');
-const box = document.querySelector('.header__box');
-
-const open = () => {
-  button.classList.remove('header__burger-close');
-  button.classList.add('header__burger-open');
-  menu.style.display = 'flex';
-  phone.style.color = '#000000';
-  logo.src = '/img/logo-black.png';
-  box.style.background = '#ffffff';
-};
-
-const close = () => {
-  button.classList.remove('header__burger-open');
-  button.classList.add('header__burger-close');
-  menu.style.display = 'none';
-  phone.style.color = '#ffffff';
-  logo.src = '/img/logo.png';
-  box.style.background = '#ffffff00';
-};
-
-button.addEventListener('click', ()=> {
-  if (button.classList.contains('header__burger-close')) {
-    open();
-  } else {
-    close();
-  }
-});
-
 // Скрол
 const bannerScrollTuors = document.querySelectorAll('.banner-scroll-tours');
 const tours = document.querySelector('#tours');
@@ -184,6 +149,113 @@ const swiperHero = new Swiper('.hero__swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+});
+
+// Бургер
+
+const button1 = document.querySelector('.header__burger1');
+
+
+const menu1 = document.querySelector('.header__list1');
+const phone1 = document.querySelector('.header__phone1');
+const logo1 = document.querySelector('.logo1');
+const box1 = document.querySelector('.header__box1');
+
+const open1 = () => {
+  button1.classList.remove('header__burger-close');
+  button1.classList.add('header__burger-open');
+  menu1.style.display = 'flex';
+  phone1.style.color = '#000000';
+  logo1.src = '/img/logo-black.png';
+  box1.style.background = '#ffffff';
+};
+
+const close1 = () => {
+  button1.classList.remove('header__burger-open');
+  button1.classList.add('header__burger-close');
+  menu1.style.display = 'none';
+  phone1.style.color = '#ffffff';
+  logo1.src = '/img/logo.png';
+  box1.style.background = '#ffffff00';
+};
+
+
+button1.addEventListener('click', ()=> {
+  if (button1.classList.contains('header__burger-close')) {
+    open1();
+  } else {
+    close1();
+  }
+});
+
+const button2 = document.querySelector('.header__burger2');
+
+
+const menu2 = document.querySelector('.header__list2');
+const phone2 = document.querySelector('.header__phone2');
+const logo2 = document.querySelector('.logo2');
+const box2 = document.querySelector('.header__box2');
+
+const open2 = () => {
+  button2.classList.remove('header__burger-close');
+  button2.classList.add('header__burger-open');
+  menu2.style.display = 'flex';
+  phone2.style.color = '#000000';
+  logo2.src = '/img/logo-black.png';
+  box2.style.background = '#ffffff';
+};
+
+const close2 = () => {
+  button2.classList.remove('header__burger-open');
+  button2.classList.add('header__burger-close');
+  menu2.style.display = 'none';
+  phone2.style.color = '#ffffff';
+  logo2.src = '/img/logo.png';
+  box2.style.background = '#ffffff00';
+};
+
+
+button2.addEventListener('click', ()=> {
+  if (button2.classList.contains('header__burger-close')) {
+    open2();
+  } else {
+    close2();
+  }
+});
+
+const button3 = document.querySelector('.header__burger3');
+
+
+const menu3 = document.querySelector('.header__list3');
+const phone3 = document.querySelector('.header__phone3');
+const logo3 = document.querySelector('.logo3');
+const box3 = document.querySelector('.header__box3');
+
+const open3 = () => {
+  button3.classList.remove('header__burger-close');
+  button3.classList.add('header__burger-open');
+  menu3.style.display = 'flex';
+  phone3.style.color = '#000000';
+  logo3.src = '/img/logo-black.png';
+  box3.style.background = '#ffffff';
+};
+
+const close3 = () => {
+  button3.classList.remove('header__burger-open');
+  button3.classList.add('header__burger-close');
+  menu3.style.display = 'none';
+  phone3.style.color = '#ffffff';
+  logo3.src = '/img/logo.png';
+  box3.style.background = '#ffffff00';
+};
+
+
+button3.addEventListener('click', ()=> {
+  if (button3.classList.contains('header__burger-close')) {
+    open3();
+  } else {
+    close3();
+  }
 });
 
 // Видео экскурсия

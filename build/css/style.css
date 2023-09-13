@@ -1336,6 +1336,7 @@ body {
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  width: 100%;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -2634,13 +2635,42 @@ body {
   padding-bottom: 65px;
 }
 
+.hero__swiper {
+  width: 100%;
+}
+
 .hero__background {
   position: absolute;
   bottom: 68px;
   height: 568px;
   width: 100%;
   background-color: #6fabd1;
-  background: url("../img/background-header.jpg") no-repeat;
+  background-image: url("../img/background-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero__background1 {
+  position: absolute;
+  bottom: 68px;
+  height: 568px;
+  width: 100%;
+  background-color: #6fabd1;
+  background-image: url("../img/background-header1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero__background2 {
+  position: absolute;
+  bottom: 68px;
+  height: 568px;
+  width: 100%;
+  background-color: #6fabd1;
+  background-image: url("../img/background-header1.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -2654,6 +2684,7 @@ body {
   margin-bottom: 13px;
   max-width: 670px;
   padding-top: 40px;
+  text-align: center;
 }
 
 .hero__text {
@@ -2664,6 +2695,7 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
   max-width: 466px;
+  text-align: center;
 }
 
 .hero__info {
@@ -2677,7 +2709,7 @@ body {
 .hero__pagination {
   position: absolute;
   margin-top: 124px;
-  top: 247px;
+  top: 360px;
 }
 
 @media (min-width: 768px) {
@@ -2687,7 +2719,25 @@ body {
   .hero__background {
     bottom: 66px;
     background-color: #6fabd1;
-    background: url("../img/background-header-tablet.jpg") no-repeat cover;
+    background-image: url("../img/background-header-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1024px;
+  }
+  .hero__background1 {
+    bottom: 66px;
+    background-color: #6fabd1;
+    background-image: url("../img/background-header-tablet1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1024px;
+  }
+  .hero__background2 {
+    bottom: 66px;
+    background-color: #6fabd1;
+    background-image: url("../img/background-header-tablet2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 1024px;
   }
   .hero__header {
@@ -2695,11 +2745,13 @@ body {
     line-height: 56px;
     margin-top: 5px;
     padding-top: 70px;
+    text-align: center;
   }
   .hero__text {
     font-size: 17px;
     margin-bottom: 28px;
     line-height: 24px;
+    text-align: center;
   }
   .hero__button {
     margin-bottom: 50px;
@@ -2759,7 +2811,7 @@ body {
     outline: none;
   }
   .hero__pagination {
-    top: 619px;
+    top: 760px;
   }
 }
 @media (min-width: 1200px) {
@@ -2771,7 +2823,29 @@ body {
     text-align: left;
     min-height: 800px;
     background-color: #6fabd1;
-    background: url("../img/background-header.jpg") no-repeat cover;
+    background-image: url("../img/background-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+  }
+  .hero__background1 {
+    bottom: 74px;
+    text-align: left;
+    min-height: 800px;
+    background-color: #6fabd1;
+    background-image: url("../img/background-header1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+  }
+  .hero__background2 {
+    bottom: 74px;
+    text-align: left;
+    min-height: 800px;
+    background-image: url("../img/background-header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
   }
   .hero__header {
     position: inherit;
@@ -2783,11 +2857,13 @@ body {
     margin-bottom: 24px;
     margin-top: 0;
     padding-top: 81px;
+    text-align: left;
   }
   .hero__text {
     line-height: 24px;
     margin: 0;
     margin-bottom: 35px;
+    text-align: left;
   }
   .hero__item {
     position: relative;
@@ -2813,7 +2889,7 @@ body {
     height: 317px;
   }
   .hero__pagination {
-    top: 350px;
+    top: 550px;
   }
   .hero__info {
     display: -webkit-box;
@@ -2904,6 +2980,9 @@ body {
     left: 572px;
     top: 382px;
   }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    left: 450px;
+  }
 }
 .swiper-autoheight, .swiper-autoheight .swiper-slide {
   height: 100%;
@@ -2925,6 +3004,8 @@ body {
   display: block;
   text-align: center;
   padding-top: 16px;
+  margin: 0 auto;
+  margin-bottom: 175px;
 }
 .button:focus, .button:hover {
   border: 1px solid #1c3374;
