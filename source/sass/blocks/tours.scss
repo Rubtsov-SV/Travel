@@ -175,6 +175,10 @@
   background-color: #0266c1;
   cursor: pointer;
 
+  svg {
+    fill: #ffffff;
+  }
+
   &:hover,
     &:focus {
       background-color: #ffffff;
@@ -204,6 +208,10 @@
   height: 35px;
   background-color: #0266c1;
   cursor: pointer;
+
+  svg {
+    fill: #ffffff;
+  }
 
   &:hover,
     &:focus {

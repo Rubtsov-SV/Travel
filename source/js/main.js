@@ -442,10 +442,18 @@ window.addEventListener('load', () => {
   sliderButton();
 });
 
+// увиличение высоты блока туры
 
-const itemItem = document.querySelector('.tours__item');
-const itemCard = document.querySelector('.tours__card');
+const itemItems = document.querySelectorAll('.tours__item');
+const itemCards = document.querySelectorAll('.tours__card');
 
-const heaghtItem = itemCard.offsetHeight;
+let heaghtItem = 0;
 
-itemItem.style.height = heaghtItem + 'px';
+for (const itemCard of itemCards) {
+  if (itemCard.offsetHeight > heaghtItem) {
+    heaghtItem = itemCard.offsetHeight;
+  }
+}
+for (const itemItem of itemItems) {
+  itemItem.style.height = heaghtItem + 'px';
+}
