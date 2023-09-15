@@ -391,7 +391,7 @@
                     <a class="header__item-link banner-scroll-contacts" href="#contacts">Контакты</a>
                   </li>
                 </ul>
-                <div>
+                <div class="header__phone-box">
                   <a class="header__phone header__phone1" href="tel:88007253232">8 800 725 32 32</a>
                 </div>
               </div>
@@ -404,6 +404,7 @@
                 <div class="swiper-wr">
                   <div class="swiper-slid">
                     <div class="hero__item container">
+                      <div class="hero__overlay-close"></div>
                       <h1 class="hero__header">Захватывающие вершины Кавказа</h1>
                       <p class="hero__text">В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и
                         совершите восход на вершину горы Чегет.</p>
@@ -483,7 +484,7 @@
                     <a class="header__item-link banner-scroll-contacts" href="#contacts">Контакты</a>
                   </li>
                 </ul>
-                <div>
+                <div class="header__phone-box">
                   <a class="header__phone header__phone2" href="tel:88007253232">8 800 725 32 32</a>
                 </div>
               </div>
@@ -497,6 +498,7 @@
 
                   <div class="swiper-slid">
                     <div class="hero__item container">
+                      <div class="hero__overlay-close"></div>
                       <h1 class="hero__header">Невероятная природа Камчатки</h1>
                       <p class="hero__text">Незабываемое приключение, во время которого вы отправитесь в путешествие по
                         одному
@@ -568,7 +570,7 @@
                     <a class="header__item-link banner-scroll-contacts" href="#contacts">Контакты</a>
                   </li>
                 </ul>
-                <div>
+                <div class="header__phone-box">
                   <a class="header__phone header__phone3" href="tel:88007253232">8 800 725 32 32</a>
                 </div>
               </div>
@@ -579,40 +581,31 @@
             <div class="hero__wrapper">
               <div class="swip">
                 <div class="swiper-wr">
-
                   <div class="swiper-slid">
                     <div class="hero__item container">
-                      <h1 class="hero__header">Невероятная природа Камчатки</h1>
-                      <p class="hero__text">Незабываемое приключение, во время которого вы отправитесь в путешествие по
-                        одному
-                        из самых нетронутых уголков дикой природы в мире.</p>
+                      <div class="hero__overlay-close"></div>
+                      <h1 class="hero__header">Магические пейзажи Алтайского Края</h1>
+                      <p class="hero__text">Алтайский трекинг-тур – это захватывающее приключение с посещением
+                        магических и
+                        захватывающих дух ландшафтов Алтайских гор.</p>
                       <a href="#" class="hero__button button">Смотреть тур</a>
-                      <div class="hero__media hero__media-picture">
-                        <picture>
-                          <source media="(min-width:1200px)"
-                            srcset="img/photo-desktop.webp 1x, img/photo-desktop@2x.webp 2x" width="410" height="459"
-                            type="image/webp">
-                          <source media="(min-width:768px)"
-                            srcset="img/photo-tablet.webp 1x, img/photo-tablet@2x.webp 2x" width="442" height="365"
-                            type="image/webp">
-                          <source media="(min-width:1200px)"
-                            srcset="img/photo-desktop.png 1x, img/photo-desktop@2x.png 2x" width="410" height="459">
-                          <img class="hero__media-photo" src="img/photo-tablet.png" srcset="img/photo-tablet@2x.png 2x"
-                            width="442" height="365" alt="Фото о экскурсии">
-                        </picture>
+                      <div class="hero__media hero__media-music">
+                        <iframe style="border:none;width:340px;height:220px;" width="340" height="220"
+                          src="https://music.yandex.ru/iframe/#album/25474374">Слушайте <a
+                            href='https://music.yandex.ru/album/25474374'></a> на Яндекс Музыке</iframe>
                       </div>
                       <div class="hero__info">
                         <p class="hero__time">
                           <svg class="hero__icon" width="12" height="12">
                             <use xlink:href="#time"></use>
                           </svg>
-                          9 дней/10 ночей
+                          8 дней/7 ночей
                         </p>
                         <p class="hero__complexity">
                           <svg class="hero__icon" width="12" height="12">
                             <use xlink:href="#complexity"></use>
                           </svg>
-                          Средняя сложность
+                          Легкая сложность
                         </p>
                       </div>
                     </div>
@@ -753,51 +746,53 @@
         <div class="swiper tours__wrapper container">
           <h2>Ближайшие туры</h2>
           <div class="swiper-wrapper tours__list">
-            <div class="swiper-slide tours__item">
-              <picture>
-                <!-- <source srcset="img/tours-photo1.webp 1x, img/tours-photo1@2x.webp 2x" width="380" height="412"
-                  type="image/webp"> -->
-                <img class="tours__photo" src="img/tours-photo1.jpg" srcset="img/tours-photo1@2x.jpg 2x" width="380"
-                  height="412" alt="Фото о экскурсии">
-              </picture>
-              <div class="tours__card">
-                <div class="tours__local">
-                  <p class="tours__direction">
-                    <svg class="tours__icon tours__icon-local" width="9" height="12">
-                      <use xlink:href="#local"></use>
-                    </svg>
-                    Кавказ
-                  </p>
-                  <p class="tours__day">
-                    <svg class="tours__icon tours__icon-sun" width="20" height="20">
-                      <use xlink:href="#sun"></use>
-                    </svg>
-                    4 дня
-                  </p>
-                  <p class="tours__night">
-                    <svg class="tours__icon tours__icon-moon" width="20" height="20">
-                      <use xlink:href="#moon"></use>
-                    </svg>
-                    3 ночи
-                  </p>
-                </div>
-                <h3>Путешествие
-                  вокруг Эльбруса
-                </h3>
-                <div class="tours__info">
-                  <div class="tours__complexity">
-                    <p>Сложность:</p>
-                    <svg class="tours__icon tours__icon-star" width="79" height="14">
-                      <use xlink:href="#star-three"></use>
-                    </svg>
+            <div class="swiper-slide">
+              <div class="tours__item">
+                <picture>
+                  <!-- <source srcset="img/tours-photo1.webp 1x, img/tours-photo1@2x.webp 2x" width="380" height="412"
+                    type="image/webp"> -->
+                  <img class="tours__photo" src="img/tours-photo1.jpg" srcset="img/tours-photo1@2x.jpg 2x" width="380"
+                    height="412" alt="Фото о экскурсии">
+                </picture>
+                <div class="tours__card">
+                  <div class="tours__local">
+                    <p class="tours__direction">
+                      <svg class="tours__icon tours__icon-local" width="9" height="12">
+                        <use xlink:href="#local"></use>
+                      </svg>
+                      Кавказ
+                    </p>
+                    <p class="tours__day">
+                      <svg class="tours__icon tours__icon-sun" width="20" height="20">
+                        <use xlink:href="#sun"></use>
+                      </svg>
+                      4 дня
+                    </p>
+                    <p class="tours__night">
+                      <svg class="tours__icon tours__icon-moon" width="20" height="20">
+                        <use xlink:href="#moon"></use>
+                      </svg>
+                      3 ночи
+                    </p>
                   </div>
-                  <div class="tours__date">
-                    <p>Даты набора:</p>
-                    <b>12.06-19.06</b>
-                  </div>
-                  <div class="tours__group">
-                    <p>Группа:</p>
-                    <b>до 15 чел.</b>
+                  <h3>Путешествие
+                    вокруг Эльбруса
+                  </h3>
+                  <div class="tours__info">
+                    <div class="tours__complexity">
+                      <p>Сложность:</p>
+                      <svg class="tours__icon tours__icon-star" width="79" height="14">
+                        <use xlink:href="#star-three"></use>
+                      </svg>
+                    </div>
+                    <div class="tours__date">
+                      <p>Даты набора:</p>
+                      <b>12.06-19.06</b>
+                    </div>
+                    <div class="tours__group">
+                      <p>Группа:</p>
+                      <b>до 15 чел.</b>
+                    </div>
                   </div>
                 </div>
               </div>

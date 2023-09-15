@@ -40,18 +40,18 @@
 
 .photogallery__photo-top {
   margin-bottom: 3px;
-  min-height: 104px;
+  height: 104px;
   width: 100%;
 }
 
 .photogallery__photo-bottom {
   width: 100%;
-  min-height: 153px;
+  height: 153px;
 }
 
 .photogallery__photo {
   width: 100%;
-  min-height: 260px;
+  height: 260px;
 }
 
 .photogallery-next {
@@ -124,6 +124,20 @@
   display: block;
   margin: auto;
   margin-top: 12px;
+}
+
+@media (min-width: 344px) {
+  .photogallery-next,
+  .photogallery-back {
+    top: 108px;
+  }
+}
+
+@media (min-width: 472px) {
+  .photogallery-next,
+  .photogallery-back {
+    top: 90px;
+  }
 }
 
 @media (min-width: $tablet) {

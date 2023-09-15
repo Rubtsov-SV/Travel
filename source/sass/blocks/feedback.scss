@@ -95,6 +95,12 @@
   }
 }
 
+
+.feedback__photo {
+  width: 100%;
+  height: auto;
+}
+
 .feedback-back {
   position: absolute;
   top: -10px;
@@ -187,8 +193,9 @@
 
   .feedback__photo {
     margin: 0;
-    width: 186px;
-    height: 237px;
+    width: 100%;
+    height: auto;
+    min-height: 237px;
     object-fit: cover;
   }
 

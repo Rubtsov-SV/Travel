@@ -40,12 +40,15 @@
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
   min-height: 412px;
   height: 100%;
   margin-bottom: 27px;
 
   img {
     height: 100%;
+    width: 100%;
+    min-height: 412px;
     object-fit: cover;
   }
 }

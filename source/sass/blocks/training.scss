@@ -82,6 +82,12 @@
   }
 }
 
+.training__photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .training__info {
   padding-left: 38px;
   position: relative;
@@ -275,8 +281,9 @@
 
   .training__item {
     img {
-      width: 176px;
-      height: 212px;
+      width: 100%;
+      height: auto;
+      min-height: 212px;
       object-fit: cover;
       margin: 0 auto;
     }
