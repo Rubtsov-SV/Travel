@@ -1,7 +1,8 @@
 .feedback {
-  padding-bottom: 63px;
+  padding-bottom: 27px;
   padding-top: 30px;
-  padding-left: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .feedback__wrapper {
@@ -63,8 +64,8 @@
 
 .feedback-next {
   position: absolute;
-  top: -10px;
-  right: 15px;
+  top: -11px;
+  right: 0;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -103,8 +104,8 @@
 
 .feedback-back {
   position: absolute;
-  top: -10px;
-  right: 57px;
+  top: -11px;
+  right: 42px;
   z-index: 2;
   width: 37px;
   height: 35px;
@@ -179,11 +180,11 @@
   }
 
   .feedback-back {
-    right: 87px;
+    right: 72px;
   }
 
   .feedback-next {
-    right: 45px;
+    right: 29px;
   }
 
   .feedback-back,
@@ -201,7 +202,7 @@
 
   .feedback__text {
     width: 294px;
-    margin: 0 0 15px 30px;
+    margin: 0 10px 15px 30px;
   }
 
   .feedback__text-last {
@@ -213,7 +214,7 @@
 @media (min-width: $desktop) {
   .feedback {
     padding-left: 120px;
-    padding-bottom: 124px;
+    padding-bottom: 137px;
   }
 
   .feedback__wrapper {
@@ -275,12 +276,12 @@
   }
 
   .feedback-back {
-    right: 162px;
+    right: 145px;
     top: -12px;
   }
 
   .feedback-next {
-    right: 120px;
+    right: 104px;
     top: -12px;
   }
 
