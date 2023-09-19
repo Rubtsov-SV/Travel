@@ -54,6 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
 const swiperHero = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   loop: true,
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -753,4 +754,17 @@ for (const itemCard of itemCards) {
 }
 for (const itemItem of itemItems) {
   itemItem.style.height = heaghtItem + 'px';
+}
+
+// атрибут для swiper
+
+let elements = document.querySelector( ".swiper-slide-duplicate-active" );
+elements.setAttribute( "tabindex", "0" );
+
+let elementActive = document.querySelector( ".swiper-slide-active" );
+elementActive.setAttribute( "tabindex", "0" );
+
+let elementBullets = document.querySelectorAll( ".swiper-pagination-bullet" );
+for (const elementBullet of elementBullets) {
+  elementBullet.setAttribute( "tabindex", "1" );
 }
