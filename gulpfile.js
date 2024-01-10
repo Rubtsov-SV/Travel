@@ -3,6 +3,7 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
 import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
+import deploy from 'gulp-gh-pages';
 import {compileMainMinScripts, compileMainScripts, compileVendorScripts} from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
@@ -43,5 +44,12 @@ const refresh = (done) => {
 const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
 const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
+
+//deploy
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+  .pipe(deploy());
+});
 
 export { createWebp as webp, build, start, dev};
